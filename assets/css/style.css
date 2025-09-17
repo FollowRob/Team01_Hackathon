@@ -1,214 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Color Scheme Variables */
+/* CSS Variables */
 :root {
-  --primary-green: #2e7d32; /* Primary Green (brand color) */
-  --accent-green: #66bb6a; /* Accent Green (hover/highlight) */
-  --energetic-yellow: #fbc02d; /* Energetic Yellow (secondary highlight) */
-  --vibrant-coral: #ff7043; /* Vibrant Coral (contrast for excitement) */
-  --cool-teal: #26a69a; /* Cool Teal (balance color) */
-  --background-light: #f9fbe7; /* Background Light */
-  --dark-neutral: #212121; /* Dark Neutral (Text / Borders) */
+    --primary-font: "Roboto Condensed", "sans-serif"; /* Headings */
+    --secondary-font: "Roboto", "sans-serif"; /* Body */
+    --primary-color: #1B5E20; /* Darker Green for better contrast */
+    --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
+    --accent-color: #D84315; /* Deeper Coral for better contrast */
+    --background-color: #FFFFFF; /* Pure white for maximum readability */
 }
 
-/* Asterisk wildcard selector to overide default styles added by the browser */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Global styles */
+
 body {
-  background: var(--background-light);
-  color: var(--dark-neutral);
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
 
-.quiz-container {
-  font-family: "Roboto", sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border: 2px solid var(--primary-green);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
-  color: var(--dark-neutral);
-  /*display: none; */ /* to display the quiz screen remove display :none*/
+h1 {
+    font-family: var(--primary-font);
+    color: var(--background-color);
+    margin-top: 0.5rem;
 }
 
-/* Styling for the timer */
-.timer {
-  font-weight: bold;
-  text-align: right;
-  font-size: 20px;
-  margin-bottom: 20px;
-  background: var(--energetic-yellow);
-  color: var(--dark-neutral);
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-}
-/* Styling for the timer when time is running out */
-.timer.danger {
-  color: var(--vibrant-coral);
-}
-/* Styling for the question */
-.quiz-container h2.question {
-  font-size: 24px;
-  background: var(--cool-teal);
-  color: #fff;
-  padding: 16px;
-  border-radius: 8px;
-  font-weight: normal;
-  line-height: 1.6;
-}
-/* Styling for the options container */
-.quiz-container .options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 20px;
-  list-style: none;
-  margin-top: 20px;
-}
-/* Styling for each option button */
-.quiz-container .option {
-  font-size: 18px;
-  background: var(--cool-teal);
-  color: #fff;
-  padding: 24px 32px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 2px solid var(--cool-teal);
-  transition: background 0.2s, border 0.2s, color 0.2s;
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
-/* Change cursor to pointer when hovering over buttons */
-.quiz.container.buttons {
-  cursor: pointer;
-}
-/* Disable pointer event when one of the option is selected */
-.disabled {
-  pointer-events: none;
-}
-/* Change background color when hovering over option buttons */
-.quiz-container .option:hover:not(:disabled) {
-  background: var(--accent-green);
-  border-color: var(--accent-green);
-  color: var(--dark-neutral);
-}
-/* Styling for the correct answer */
-/* Styling for the correct and incorrect answer */
-.option.correct {
-  background: var(--primary-green);
-  border-color: var(--primary-green);
-  color: #fff;
-}
-.option.incorrect {
-  background: var(--vibrant-coral);
-  border-color: var(--vibrant-coral);
-  color: #fff;
-}
-/* Styling for the next and retake button */
-.quiz-container .next-button,
-.quiz-result .retake-button {
-  background: var(--primary-green);
-  color: #fff;
-  border: none;
-  padding: 16px 32px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 8px;
-  cursor: pointer;
-  letter-spacing: 3px;
-  width: fit-content;
-  transition: background 0.2s;
+main {
+    margin: auto;
+    background-color: var(--background-color);
 }
 
-.quiz-container .next-button:hover,
-.quiz-result .retake-button:hover {
-  background: var(--accent-green);
-  color: var(--dark-neutral);
+section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
-/* styling for quiz-result*/
-.quiz-result {
-  flex-direction: column;
-  gap: 24px;
-  font-family: "Roboto", sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border: 2px solid var(--primary-green);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
-  color: var(--dark-neutral);
+
+/* NAVBAR STYLES */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: fit-content;
 }
 
-/* quiz-result question container */
-.quiz-result .question-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
-  border: 2px solid var(--cool-teal);
-  border-radius: 6px;
-  background: var(--background-light);
+.navbarNav {
+    color: #F2F2F2;
 }
 
-/* quiz-result incorrect question container */
-.quiz-result .question-container.incorrect {
-  background: #fff0eb;
-  border-color: var(--vibrant-coral);
-  color: var(--dark-neutral);
+/* HERO SECTION STYLES */
+
+.hero {
+    background: url(../images/pexels-harold-vasquez-853421-2653362.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5); /* dark layer */
+    background-blend-mode: multiply;
+    height: 40vh;
+    width: 100%;
+    position: relative;
 }
 
-/* question number styling */
-.question-number {
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 16px;
-  background: var(--energetic-yellow);
-  color: var(--dark-neutral);
-  padding: 4px 8px;
-  border-radius: 8px;
-}
-/* user/correct answer colors */
-.user-answer {
-  color: var(--vibrant-coral);
-  font-weight: bold;
+.hero-text {
+    color: #F2F2F2;
+    font-size: 1rem;
 }
 
-.correct-answer {
-  color: var(--primary-green);
-  font-weight: bold;
+/* LEARN MORE */
+
+.learn-more {
+    background-color: var(--background-color);
 }
 
 /* Custom Footer Styling */
 .custom-footer {
-  background: var(--primary-green);
-  color: #fff;
+
+    background: var(--background-color);
 }
+
 .custom-footer h5 {
-  color: var(--energetic-yellow);
-  letter-spacing: 2px;
+    color: var(--secondary-color);
 }
-.custom-footer p,
-.custom-footer ul,
-.custom-footer li {
-  color: #fff;
-}
+
 .footer-link {
-  color: var(--energetic-yellow);
-  text-decoration: none;
-  transition: color 0.2s;
+    color: var(--secondary-color);
+    transition: color 0.2s;
 }
+
 .footer-link:hover {
-  color: var(--vibrant-coral);
-  text-decoration: underline;
-}
-.footer-bottom {
-  background: var(--accent-green);
-  color: var(--dark-neutral);
-  font-weight: bold;
+    color: var(--accent-color);
+    text-decoration: underline;
 }

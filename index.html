@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,47 +34,35 @@
 
   <body>
     <!--Navbar using bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
 
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#learn-more">Learn More</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="#learn-more">Learn More</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <main>
-      <!--Hero image w/ button and game start-->
-      <header id="header" class="py-5 bg-light text-center">
-        <div class="container">
-          <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
-          <p class="lead mb-4">Test your knowledge and challenge yourself!</p>
 
-          <a href="quiz.html" class="btn btn-outline-dark btn-lg mt-3"
-
-            >Click to start game</a
-          >
-        </div>
-      </header>
+    <!--Hero image w/ button and game start-->
+    <header id="header" class="hero py-5 text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
+        <p class="hero-text">Test your knowledge and challenge yourself!</p>
+        <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
+    </div>
+  </header>
 
 
       <!--Quiz game w/ javascript goes here-->
@@ -82,10 +71,39 @@
       </section>
 
       <!--Section using 3x bootstrap cards w/ links to resources-->
-      <section id="resources">
-        <div></div>
-      </section>
-    </main>
+      <!--Add pictures w/ device scalability-->
+    <section id="learn-more" class="learn-more container">
+    <h2 class="text-center mb-5">Learn More</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Full stack developer</h5>
+            <p class="card-text">Learn more about an exciting career pathway.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Tips</h5>
+            <p class="card-text">Get advice from the pros on improving your prospects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Example projects</h5>
+            <p class="card-text">Get inspired with great websites built by coders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
 
     <!--Footer with links to social media and copyright-->
     <footer>
@@ -144,10 +162,11 @@
             </div>
           </div>
         </div>
-        <div class="text-center p-3 footer-bottom">
-          Made with ❤️ for the Hackathon
-        </div>
-      </footer>
+      </div>
+      <div class="text-center p-3 footer-bottom">
+        Made with ❤️ for the Hackathon
+      </div>
+    </footer>
     </footer>
 
     <!-- Pull external Javascript -->
