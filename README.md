@@ -107,11 +107,13 @@ You can fork this repository by using the following steps:
 
 ### Team # 1
 
-- Sean Matthews
-- Mamta Oli
-- Michael Owen
-- Alex Riley
-- Rob Smith
+| Participant   | Description                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Mamta Oli     | <ul><li>[GitHub Profile](https://github.com/Futurevision108)</li></ul>                                                                                 |
+| Sean Matthews | <ul><li>[GitHub Profile](https://github.com/SeanMatthews26)</li><li>[LinkedIn Profile](https://www.linkedin.com/in/sean-matthews-6b085a27a/)</li></ul> |
+| Michael Owen  | <ul><li>[GitHub Profile](https://github.com/michael311087)</li></ul>                                                                                   |
+| Alex Riley    | <ul><li>[GitHub Profile](https://github.com/alexjriley)</li><li>[LinkedIn Profile](https://www.linkedin.com/in/digitalar/)</li></ul>                   |
+| Rob Smith     | <ul><li>[GitHub Profile](https://github.com/FollowRob)</li><li>[LinkedIn Profile](https://www.linkedin.com/in/robjamessmith/)</li></ul>                |
 
 ## Resources
 
