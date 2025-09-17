@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     />
 
+
     <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -32,6 +33,7 @@
 
   <body>
     <!--Navbar using bootstrap-->
+
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">LOGO</a>
@@ -45,19 +47,22 @@
           <li class="nav-item"><a class="nav-link" href="#learn-more">Learn More</a></li>
           <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
         </ul>
+
       </div>
     </div>
   </nav>
 
     <main>
+
     <!--Hero image w/ button and game start-->
     <header id="header" class="hero py-5 text-center">
     <div class="container">
         <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
         <p class="hero-text">Test your knowledge and challenge yourself!</p>
-        <a href="#quiz" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
+        <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
     </div>
   </header>
+
 
       <!--Quiz game w/ javascript goes here-->
       <section id="quiz-game">
@@ -102,29 +107,58 @@
     <!--Footer with links to social media and copyright-->
     <footer>
       <!-- Bootstrap 5 Footer -->
-  <footer class="custom-footer text-center text-lg-start mt-5">
-  <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5>Team01 Hackathon</h5>
-            <p>
-              &copy; 2025 Team01. All rights reserved.
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5>Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">About</a></li>
-              <li><a href="#" class="footer-link">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5>Follow Us</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#" class="footer-link">Twitter</a></li>
-              <li><a href="#" class="footer-link">GitHub</a></li>
-            </ul>
+      <footer class="custom-footer text-center text-lg-start mt-5">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Team01 Hackathon</h5>
+              <p>&copy; 2025 Team01. All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="footer-link">Home</a></li>
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Follow Us</h5>
+              <ul class="list-unstyled mb-0">
+
+                <li>
+                  <a
+                    href="https://www.twitter.com"
+                    class="footer-link"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"
+                    ><i class="fab fa-twitter"></i> Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/"
+                    class="footer-link"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Visit our GitHub page (opens in a new tab)"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com"
+                    class="footer-link"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"
+                    ><i class="fab fa-facebook"></i> Facebook</a
+                  >
+                </li>
+
+              </ul>
+            </div>
           </div>
         </div>
       </div>
