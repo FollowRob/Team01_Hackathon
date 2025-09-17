@@ -6,6 +6,8 @@ The <u>**Project title**</u> is a website that provides information about becomi
 
 ## UX
 
+### Colour palette
+
 The website uses relatively bright colours with some darker ones used for both contrast and accessibility. The aim was to keep the colour scheme as light and friendly as possible as we want users to associate positivity with their desire to learn to code.
 
 The colour palette was selected by utilising both ChatGPT and [Coolors](https://coolors.co/)
@@ -21,11 +23,17 @@ Colours chosen were:
 
 ![Colour Palette chosen](assets/images/readme/colours.png)
 
-## Colour Scheme
-
-## Colour palette
-
 ## Typography
+
+Typography and Font Awesome libraries were used for typography and iconography.
+
+The **"X"** Google font was used for all text elements on the site.
+
+- [Font name](https://fonts.google.com/)
+
+Font Awesome was used for icons used in the footer and elsewhere.
+
+- [Font Awesome](https://fontawesome.com/)
 
 ## Features
 
@@ -38,6 +46,15 @@ Colours chosen were:
 ## Future development
 
 ## Tools and technologies
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [JavaScript](https://www.javascript.com/) used for auto-closing the responsive burger menu.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Google Fonts](https://fonts.google.com/) used for fonts on the site.
+- [Coolors](https://coolors.co/) used to generate contrasting and complementary colors
 
 ## Testing
 
