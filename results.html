@@ -24,7 +24,6 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -46,10 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#learn-more">Learn More</a>
             </li>
@@ -62,29 +58,47 @@
     </nav>
 
     <main>
-      <!--Hero image w/ button and game start-->
-      <header id="header" class="py-5 bg-light text-center">
-        <div class="container">
-          <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
-          <p class="lead mb-4">Test your knowledge and challenge yourself!</p>
+      <!--create the result container -->
+      <div class="quiz-result">
+        <h2>You scored 3 out of 5.</h2>
 
-          <a href="quiz.html" class="btn btn-outline-dark btn-lg mt-3"
+        <div class="question-container incorrect">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <!-- Message for user answer with no answer-->
+          <div class="user-answer">Your Answer : Not answered</div>
 
-            >Click to start game</a
-          >
+          <!-- Message for user answer with correct answer-->
+          <div class="correct-answer">Correct Answer: correct answer</div>
         </div>
-      </header>
 
+        <!-- create the question container for other questions -->
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
 
-      <!--Quiz game w/ javascript goes here-->
-      <section id="quiz-game">
-        <div></div>
-      </section>
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
 
-      <!--Section using 3x bootstrap cards w/ links to resources-->
-      <section id="resources">
-        <div></div>
-      </section>
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
+
+        <!-- create the retake button -->
+        <button class="retake-button">Retake Quiz</button>
+      </div>
     </main>
 
     <!--Footer with links to social media and copyright-->
@@ -108,38 +122,8 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Follow Us</h5>
               <ul class="list-unstyled mb-0">
-
-                <li>
-                  <a
-                    href="https://www.twitter.com"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"
-                    ><i class="fab fa-twitter"></i> Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our GitHub page (opens in a new tab)"
-                    ><i class="fab fa-github"></i> GitHub</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"
-                    ><i class="fab fa-facebook"></i> Facebook</a
-                  >
-                </li>
-
+                <li><a href="#" class="footer-link">Twitter</a></li>
+                <li><a href="#" class="footer-link">GitHub</a></li>
               </ul>
             </div>
           </div>

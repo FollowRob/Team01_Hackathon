@@ -24,7 +24,6 @@
       crossorigin="anonymous"
     />
 
-
     <!-- Link to custom CSS file -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -46,10 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#learn-more">Learn More</a>
             </li>
@@ -62,29 +58,30 @@
     </nav>
 
     <main>
-      <!--Hero image w/ button and game start-->
-      <header id="header" class="py-5 bg-light text-center">
-        <div class="container">
-          <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
-          <p class="lead mb-4">Test your knowledge and challenge yourself!</p>
+      <!-- create the quiz container-->
 
-          <a href="quiz.html" class="btn btn-outline-dark btn-lg mt-3"
+      <div class="quiz-container">
+        <h1>Trivia quiz</h1>
 
-            >Click to start game</a
-          >
+        <!--create  the timer -->
+        <div class="timer">Time left:10 seconds</div>
+
+        <!--create the question -->
+        <h2 class="question"></h2>
+
+        <!-- create the options -->
+        <div class="options">
+          <!-- To display the questions from array using javascript this button class has now been disabled to avoid repetition of code:see const createQuestion = () => {
+        
+       <button class="option correct">Jane Austen</button>
+        <button class="option incorrect">Charlotte Bronte</button>
+        <button class="option">Emily Bronte</button>    
+        <button class="option">Mary Shelley</button>   -->
         </div>
-      </header>
 
-
-      <!--Quiz game w/ javascript goes here-->
-      <section id="quiz-game">
-        <div></div>
-      </section>
-
-      <!--Section using 3x bootstrap cards w/ links to resources-->
-      <section id="resources">
-        <div></div>
-      </section>
+        <!--create the next button -->
+        <button class="next-button">Next</button>
+      </div>
     </main>
 
     <!--Footer with links to social media and copyright-->
@@ -108,38 +105,8 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Follow Us</h5>
               <ul class="list-unstyled mb-0">
-
-                <li>
-                  <a
-                    href="https://www.twitter.com"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"
-                    ><i class="fab fa-twitter"></i> Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our GitHub page (opens in a new tab)"
-                    ><i class="fab fa-github"></i> GitHub</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com"
-                    class="footer-link"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"
-                    ><i class="fab fa-facebook"></i> Facebook</a
-                  >
-                </li>
-
+                <li><a href="#" class="footer-link">Twitter</a></li>
+                <li><a href="#" class="footer-link">GitHub</a></li>
               </ul>
             </div>
           </div>
