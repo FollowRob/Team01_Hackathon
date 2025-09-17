@@ -45,9 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#learn-more">Learn More</a>
             </li>
@@ -56,33 +54,51 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
 
     <main>
-      <!--Hero image w/ button and game start-->
-      <header id="header" class="py-5 bg-light text-center">
-        <div class="container">
-          <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
-          <p class="lead mb-4">Test your knowledge and challenge yourself!</p>
-          <a href="quiz.html" class="btn btn-outline-dark btn-lg mt-3"
-            >Click to start game</a
-          >
+      <!--create the result container -->
+      <div class="quiz-result">
+        <h2>You scored 3 out of 5.</h2>
+
+        <div class="question-container incorrect">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <!-- Message for user answer with no answer-->
+          <div class="user-answer">Your Answer : Not answered</div>
+
+          <!-- Message for user answer with correct answer-->
+          <div class="correct-answer">Correct Answer: correct answer</div>
         </div>
-      </header>
-      <h1>hello</h1>
-      <!--Section with info about the quiz-->
 
-      <!--Quiz game w/ javascript goes here-->
-      <section id="quiz-game">
-        <div></div>
-      </section>
+        <!-- create the question container for other questions -->
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
 
-      <!--Section using 3x bootstrap cards w/ links to resources-->
-      <section id="resources">
-        <div></div>
-      </section>
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">Who wrote the novel 'Pride and Prejudice?</div>
+          <div class="user-answer">Your Answer : Not Answered</div>
+          <div class="correct-answer">Correct Answer: correct answer</div>
+        </div>
+
+        <!-- create the retake button -->
+        <button class="retake-button">Retake Quiz</button>
+      </div>
     </main>
 
     <!--Footer with links to social media and copyright-->
