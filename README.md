@@ -6,6 +6,15 @@ The <u>**Project title**</u> is a website that provides information about becomi
 
 ## UX
 
+### Layout
+
+The site layout was created using wireframes and done in [Canva](https://canva.com/)
+
+A minimal and clean layout was chosen to avoid any overstimulation on the understanding that neurodivergence is a common occurence within the tech community.
+
+![Wireframe 1](assets/images/readme/wireframe1.jpg)
+![Wireframe 2](assets/images/readme/wireframe2.jpg)
+
 ### Colour palette
 
 The website uses relatively bright colours with some darker ones used for both contrast and accessibility. The aim was to keep the colour scheme as light and friendly as possible as we want users to associate positivity with their desire to learn to code.
