@@ -39,6 +39,7 @@ q<!DOCTYPE html>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="#learn-more">Learn More</a></li>
           <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
@@ -56,22 +57,49 @@ q<!DOCTYPE html>
         <a href="#quiz" class="btn btn-outline-dark btn-lg mt-3">Click to start game</a>
     </div>
   </header>
-  <h1>hello</h1>
-      <!--Section with info about the quiz-->
 
       <!--Quiz game w/ javascript goes here-->
-      <section id="quiz-game">
-        <div>
-          
-        </div>
-      </section>
+    <section id="quiz" class="quiz-section">
+    <h2>Quiz Section</h2>
+    <div id="quiz-container" class="mt-4">
+      <p>Click the button above to start the quiz!</p>
+    </div>
+    <div id="quiz-result" class="mt-4 fw-bold"></div>
+  </section>
 
       <!--Section using 3x bootstrap cards w/ links to resources-->
-      <section id="resources">
-        <div>
-
+      <!--Add pictures w/ device scalability-->
+      <section id="learn-more" class="learn-more container">
+    <h2 class="text-center mb-5">Learn More</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Full stack developer</h5>
+            <p class="card-text">Learn more about an exciting career pathway.</p>
+          </div>
         </div>
-      </section>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Tips</h5>
+            <p class="card-text">Get advice from the pros on improving your prospects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title">Example projects</h5>
+            <p class="card-text">Get inspired with great websites built by coders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
     </main>
 
     <!--Footer with links to social media and copyright-->
