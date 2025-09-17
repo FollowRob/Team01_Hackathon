@@ -189,6 +189,14 @@ body {
 .custom-footer {
     background: var(--primary-green);
     color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.custom-footer h5,
+.custom-footer p,
+.custom-footer ul,
+.custom-footer li,
+.custom-footer a {
+    font-family: inherit;
 }
 .custom-footer h5 {
     color: var(--energetic-yellow);
