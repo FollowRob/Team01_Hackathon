@@ -1,4 +1,4 @@
-<center><h1> Project Title </h1></center>
+# Project Title
 
 ## Description
 
