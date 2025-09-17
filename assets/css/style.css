@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); 
 
 /* Color Scheme Variables */
 :root {
@@ -9,9 +10,6 @@
     --background-light: #F9FBE7; /* Background Light */
     --dark-neutral: #212121; /* Dark Neutral (Text / Borders) */
 }
-
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); 
 
 /* Asterisk wildcard selector to overide default styles added by the browser */
 *{
@@ -38,7 +36,6 @@ body {
 }
 
 /* Styling for the timer */
-/* Styling for the timer */
 .timer {
     font-weight: bold;
     text-align: right;
@@ -50,11 +47,9 @@ body {
     padding: 0.5rem 1rem;
 }
 /* Styling for the timer when time is running out */
-/* Styling for the timer when time is running out */
 .timer.danger {
     color: var(--vibrant-coral);
 }
-/* Styling for the question */
 /* Styling for the question */
 .quiz-container h2.question {
         font-size: 24px;
@@ -66,7 +61,6 @@ body {
         line-height: 1.6; 
 }
 /* Styling for the options container */
-/* Styling for the options container */
 .quiz-container .options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,7 +69,6 @@ body {
     list-style: none;
     margin-top: 20px;
 }
-/* Styling for each option button */
 /* Styling for each option button */
 .quiz-container .option  {
     font-size: 18px;
@@ -97,7 +90,6 @@ body {
     pointer-events: none;
 }
 /* Change background color when hovering over option buttons */
-/* Change background color when hovering over option buttons */
 .quiz-container .option:hover:not(:disabled) {
     background: var(--accent-green);
     border-color: var(--accent-green);
@@ -115,9 +107,6 @@ body {
     border-color: var(--vibrant-coral);
     color: #fff;
 }
-/* Styling for the next and retake button */
-
-
 /* Styling for the next and retake button */
 .quiz-container .next-button,
 .quiz-result .retake-button {
@@ -141,8 +130,6 @@ body {
     color: var(--dark-neutral);
 }
 
-
-/* styling for quiz-result*/
 /* styling for quiz-result*/
 .quiz-result {
     display: none;  /* to display the quiz  screen change  display : from flex to none */
