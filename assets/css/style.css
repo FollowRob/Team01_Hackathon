@@ -132,7 +132,6 @@ body {
 
 /* styling for quiz-result*/
 .quiz-result {
-    display: none;  /* to display the quiz  screen change  display : from flex to none */
     flex-direction: column;
     gap: 24px;
     font-family: "Roboto", sans-serif;

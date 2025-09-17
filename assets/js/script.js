@@ -143,7 +143,7 @@ const displayquizResult = () => {
 function setupQuiz() {
     score = 0;
     questionNumber = 0;
-    window.location.href = "index.html";
+    window.location.href = "quiz.html";
 }
 
 createQuestion();
