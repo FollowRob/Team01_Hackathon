@@ -186,6 +186,7 @@ body {
 
 /* Custom Footer Styling */
 .custom-footer {
+
   background: var(--primary-green);
   color: #fff;
 }
