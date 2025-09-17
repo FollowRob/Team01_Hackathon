@@ -62,6 +62,14 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 ## Contributors
 
+### Team # 1
+
+- Sean Matthews
+- Mamta Oli
+- Michael Owen
+- Alex Riley
+- Rob Smith
+
 ## Resources
 
 ### Media
