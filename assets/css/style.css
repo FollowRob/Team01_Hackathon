@@ -1,3 +1,31 @@
+/* Custom Footer Styling */
+.custom-footer {
+    background: var(--primary-green);
+    color: #fff;
+}
+.custom-footer h5 {
+    color: var(--energetic-yellow);
+    letter-spacing: 2px;
+}
+.custom-footer p,
+.custom-footer ul,
+.custom-footer li {
+    color: #fff;
+}
+.footer-link {
+    color: var(--energetic-yellow);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: var(--vibrant-coral);
+    text-decoration: underline;
+}
+.footer-bottom {
+    background: var(--accent-green);
+    color: var(--dark-neutral);
+    font-weight: bold;
+}
 /* Color Scheme Variables */
 :root {
     --primary-green: #2E7D32; /* Primary Green (brand color) */
