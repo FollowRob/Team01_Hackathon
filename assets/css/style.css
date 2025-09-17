@@ -1,0 +1,198 @@
+/* Color Scheme Variables */
+:root {
+    --primary-green: #2E7D32; /* Primary Green (brand color) */
+    --accent-green: #66BB6A; /* Accent Green (hover/highlight) */
+    --energetic-yellow: #FBC02D; /* Energetic Yellow (secondary highlight) */
+    --vibrant-coral: #FF7043; /* Vibrant Coral (contrast for excitement) */
+    --cool-teal: #26A69A; /* Cool Teal (balance color) */
+    --background-light: #F9FBE7; /* Background Light */
+    --dark-neutral: #212121; /* Dark Neutral (Text / Borders) */
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); 
+
+/* Asterisk wildcard selector to overide default styles added by the browser */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background: var(--background-light);
+    color: var(--dark-neutral);
+}
+
+.quiz-container {
+        font-family: "Roboto",sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border: 2px solid var(--primary-green);
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
+        color: var(--dark-neutral);
+        /*display: none; */    /* to display the quiz screen remove display :none*/
+}
+
+/* Styling for the timer */
+/* Styling for the timer */
+.timer {
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: var(--energetic-yellow);
+    color: var(--dark-neutral);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+/* Styling for the timer when time is running out */
+/* Styling for the timer when time is running out */
+.timer.danger {
+    color: var(--vibrant-coral);
+}
+/* Styling for the question */
+/* Styling for the question */
+.quiz-container h2.question {
+        font-size: 24px;
+        background: var(--cool-teal);
+        color: #fff;
+        padding: 16px;
+        border-radius: 8px;
+        font-weight: normal;
+        line-height: 1.6; 
+}
+/* Styling for the options container */
+/* Styling for the options container */
+.quiz-container .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+/* Styling for each option button */
+/* Styling for each option button */
+.quiz-container .option  {
+    font-size: 18px;
+    background: var(--cool-teal);
+    color: #fff;
+    padding: 24px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid var(--cool-teal);
+    transition: background 0.2s, border 0.2s, color 0.2s;
+}
+
+/* Change cursor to pointer when hovering over buttons */
+.quiz.container.buttons {
+    cursor: pointer;
+}
+/* Disable pointer event when one of the option is selected */
+.disabled {
+    pointer-events: none;
+}
+/* Change background color when hovering over option buttons */
+/* Change background color when hovering over option buttons */
+.quiz-container .option:hover:not(:disabled) {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: var(--dark-neutral);
+}
+/* Styling for the correct answer */
+/* Styling for the correct and incorrect answer */
+.option.correct {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: #fff;
+}
+.option.incorrect {
+    background: var(--vibrant-coral);
+    border-color: var(--vibrant-coral);
+    color: #fff;
+}
+/* Styling for the next and retake button */
+
+
+/* Styling for the next and retake button */
+.quiz-container .next-button,
+.quiz-result .retake-button {
+    background: var(--primary-green);
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.quiz-container .next-button:hover,
+.quiz-result .retake-button:hover {
+    background: var(--accent-green);
+    color: var(--dark-neutral);
+}
+
+
+/* styling for quiz-result*/
+/* styling for quiz-result*/
+.quiz-result {
+    display: none;  /* to display the quiz  screen change  display : from flex to none */
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Roboto", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid var(--primary-green);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
+    color: var(--dark-neutral);
+}
+
+/* quiz-result question container */
+.quiz-result .question-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 2px solid var(--cool-teal);
+    border-radius: 6px;
+    background: var(--background-light);
+}
+
+/* quiz-result incorrect question container */
+.quiz-result .question-container.incorrect{
+    background: #fff0eb;
+    border-color: var(--vibrant-coral);
+    color: var(--dark-neutral);
+}
+
+/* question number styling */
+.question-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 16px;
+    background: var(--energetic-yellow);
+    color: var(--dark-neutral);
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+/* user/correct answer colors */
+.user-answer {
+    color: var(--vibrant-coral);
+    font-weight: bold;
+}
+
+.correct-answer {
+    color: var(--primary-green);
+    font-weight: bold;
+}
