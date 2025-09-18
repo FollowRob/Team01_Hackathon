@@ -22,13 +22,32 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <title>## Quiz Game ##</title>
+
+  <!-- Favicon -->
+  <!-- SVG for modern browsers -->
+  <link rel="icon" href="assets/favicon/favicon-newbietoninja.svg" type="image/svg+xml" />
+
+  <!-- PNG fallbacks -->
+  <link rel="icon" href="assets/favicon/newbietoninja-32.png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon/newbietoninja-16.png" sizes="16x16" />
+
+  <!-- Classic ICO fallback -->
+  <link rel="icon" href="assets/favicon/favicon-newbietoninja.ico" sizes="any" />
+
+  <!-- iOS home screen -->
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon-n2n.png" />
+
+  <!-- Optional larger sizes -->
+  <link rel="icon" href="assets/favicon/newbietoninja-256.png" sizes="192x192" />
+  <link rel="icon" href="assets/favicon/newbietoninja-512.png" sizes="512x512" />
 </head>
 
 <body>
   <!--Navbar using bootstrap-->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">LOGO</a>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/domo-logo.png" alt="DOMo Logo">
+        NewbieToNinja</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,33 +57,26 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#quiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#learn-more">Learn More</a></li>
         </ul>
-
       </div>
     </div>
   </nav>
 
   <main>
     <!-- create the quiz container-->
-
     <div class="quiz-container">
       <h1>Trivia quiz</h1>
-
       <!--create  the timer -->
       <div class="timer">Time left:10 seconds</div>
-
       <!--create the question -->
       <h2 class="question"></h2>
-
       <!-- create the options -->
       <div class="options">
         <!-- To display the questions from array using javascript this button class has now been disabled to avoid repetition of code:see const createQuestion = () => {
-        
        <button class="option correct">Jane Austen</button>
         <button class="option incorrect">Charlotte Bronte</button>
         <button class="option">Emily Bronte</button>    
         <button class="option">Mary Shelley</button>   -->
       </div>
-
       <!--create the next button -->
       <button class="next-button">Next</button>
       <button class="retake-button">Restart Quiz</button>
