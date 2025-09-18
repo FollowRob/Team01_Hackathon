@@ -10,11 +10,15 @@ let quizData = [
       "Represents the content of an HTML document.",
     ],
     correct: "Help screen readers to identify the language of the page.",
+    explanation:
+      "The 'lang' attribute tells assistive technologies (like screen readers) the language of the page, improving accessibility.",
   },
   {
     question: "Which HTML element is used to define the title of a document?",
     options: ["<meta>", "<title>", "<head>", "<header>"],
     correct: "<title>",
+    explanation:
+      "The <title> element defines the title shown in the browser tab and used by search engines.",
   },
   {
     question: "In HTML,why do we use the 'anchor' element?",
@@ -26,14 +30,18 @@ let quizData = [
     ],
     correct:
       "To link to other web documents files or locations within the same page.",
+    explanation:
+      "The <a> (anchor) element is used to create hyperlinks to other pages, files, or sections within the same page.",
   },
   {
     question: "What combination is used with the <datalist> element in HTML5?",
     options: ["<option>", "<value>", "<label>", "<input>"],
     correct: "<input>",
+    explanation:
+      "The <datalist> element works with <input> to provide a list of predefined options while still allowing free text input.",
   },
   {
-    question: " What is the main purpose of the <form> element?",
+    question: "What is the main purpose of the <form> element?",
     options: [
       "To link the Javascript script sheet",
       "To input table",
@@ -41,14 +49,18 @@ let quizData = [
       "To group and submit user input data to a server.",
     ],
     correct: "To group and submit user input data to a server.",
+    explanation:
+      "The <form> element collects user input and sends it to a server for processing, usually through GET or POST requests.",
   },
   {
-    question: " What type of attribute is a 'control' attribute?",
+    question: "What type of attribute is a 'control' attribute?",
     options: ["global", "boolean", "event", "element- specific"],
     correct: "boolean",
+    explanation:
+      "A boolean attribute represents a true/false value. If present, it's considered true (e.g., 'disabled').",
   },
   {
-    question: "Select the  correct syntax to  link to an external stylesheet?",
+    question: "Select the correct syntax to link to an external stylesheet?",
     options: [
       "<style rel='stylesheet' href='styles.css'>",
       "<link rel='stylesheet' href='styles.css'>",
@@ -56,15 +68,19 @@ let quizData = [
       "<a href='stylesheet>",
     ],
     correct: "<link rel='stylesheet' href='styles.css'>",
+    explanation:
+      "The <link> element with rel='stylesheet' and href='...' is the correct way to link an external CSS file.",
   },
   {
     question:
-      "Which  pseudo-class is  used to style a link only when a user hovers over it?",
+      "Which pseudo-class is used to style a link only when a user hovers over it?",
     options: [":hover", ":active", ":focused", ":visited"],
     correct: ":hover",
+    explanation:
+      "The :hover pseudo-class applies styles when the user’s cursor is over an element.",
   },
   {
-    question: "What is  1vh  in CSS?",
+    question: "What is 1vh in CSS?",
     options: [
       "Viewport width",
       "View width of the parent element.",
@@ -72,17 +88,23 @@ let quizData = [
       "Show the visual width",
     ],
     correct: "Viewport width",
+    explanation:
+      "1vh equals 1% of the viewport’s height, not width. (So 100vh = full viewport height).",
   },
   {
-    question: " How many type of inserting a  CSS stylesheet?",
+    question: "How many ways can CSS be applied to an HTML document?",
     options: ["3", "1", "2", "0"],
     correct: "3",
+    explanation:
+      "There are three ways: inline CSS, internal CSS (using <style>), and external CSS (using <link>).",
   },
   {
     question:
       "Which feature of Chrome Developer Tools is most useful when troubleshooting layout issues in CSS?",
     options: ["Element", "console", "source", "network"],
     correct: "Element",
+    explanation:
+      "The 'Elements' panel lets you inspect and modify HTML and CSS directly, making it essential for layout debugging.",
   },
   {
     question: "Which of the following is not a valid JavaScript variable name?",
@@ -93,28 +115,38 @@ let quizData = [
       "firstAndLastNames",
     ],
     correct: "2names",
+    explanation:
+      "Variable names cannot start with a digit, so '2names' is invalid.",
   },
   {
     question:
-      " what is the  option to write the multiline comment in Javascript?",
+      "What is the option to write the multiline comment in Javascript?",
     options: ["/* */", "<!---->", "//", "/*"],
     correct: "/* */",
+    explanation:
+      "JavaScript supports multiline comments using /* comment here */.",
   },
   {
-    question: "JavaScript keyword to return the type of variable?",
+    question: "What is the JavaScript keyword to return the type of variable?",
     options: ["datatype", "typeof", "includes", "var"],
     correct: "typeof",
+    explanation:
+      "The 'typeof' operator returns the data type of a variable or expression.",
   },
   {
     question:
-      "Method used in JavaScript to check if a value exists within an array or a string?",
+      "What is the method used in JavaScript to check if a value exists within an array or a string?",
     options: [".pop ()", "shifts()", ".includes()", ".values()"],
     correct: ".includes()",
+    explanation:
+      "The .includes() method checks if a value exists in an array or string, returning true or false.",
   },
   {
     question: "Which of the following is not a JavaScript data type?",
     options: ["Boolean", "Number", "Float", "String"],
     correct: "Float",
+    explanation:
+      "JavaScript has Number (covering integers and floats), but 'Float' itself is not a separate type.",
   },
   {
     question:
@@ -126,12 +158,16 @@ let quizData = [
       "var colors = < 'red', 'green', 'blue' >",
     ],
     correct: "var colors = [ 'red', 'green', 'blue' ]",
+    explanation:
+      "Arrays in JavaScript use square brackets []. The other options are invalid syntax.",
   },
   {
     question:
       "Select an organisation that develops standard and guidelines to help build web?",
     options: ["WWF", "WWE", "W3C", "W3S"],
     correct: "W3C",
+    explanation:
+      "The W3C (World Wide Web Consortium) develops open standards like HTML, CSS, and accessibility guidelines.",
   },
   {
     question: "What is the purpose of 'aria-label'?",
@@ -142,16 +178,20 @@ let quizData = [
       "Refers to optimizing a website's",
     ],
     correct: "Provide screen readers with the discription of the image",
+    explanation:
+      "The 'aria-label' attribute gives an accessible name to elements, read aloud by screen readers.",
   },
   {
-    question: " selects an element by its ID in JavaScript ?",
+    question: "selects an element by its ID in JavaScript?",
     options: [
       "document.getElementById()",
       "document.getByID()",
       "document.select()",
-      "document .queryselector()",
+      "document.querySelector()",
     ],
-    correct: "a)document.getElementById()",
+    correct: "document.getElementById()",
+    explanation:
+      "The document.getElementById() method returns the element with the given ID.",
   },
 ];
 
@@ -161,6 +201,7 @@ const question = document.querySelector(".quiz-container .question");
 const options = document.querySelector(".quiz-container .options");
 const nextButton = document.querySelector(".quiz-container .next-button");
 const quizResult = document.querySelector(".quiz-result");
+const answerExplanation = document.querySelector(".answer-explanation");
 const retakeQuizButton = document.querySelector(".quiz-result .retake-button");
 if (retakeQuizButton) {
   retakeQuizButton.addEventListener("click", setupQuiz);
@@ -211,12 +252,17 @@ const createQuestion = () => {
     option.addEventListener("click", (e) => {
       checkAnswer(e);
     });
+
+    //Answer Option Clicked
     option.addEventListener("click", function () {
+      var correctMessage = " ";
       // Compare trimmed values to avoid whitespace issues
       if (o.trim() === quizData[currentIndex].correct.trim()) {
         option.classList.add("correct");
+        correctMessage = "Correct!";
       } else {
         option.classList.add("incorrect");
+        correctMessage = "Incorrect.";
         // Find and highlight the correct answer button
         Array.from(options.children).forEach((btn) => {
           if (
@@ -226,6 +272,9 @@ const createQuestion = () => {
           }
         });
       }
+      // Show explanation
+      console.log(correctMessage + quizData[currentIndex].explanation);
+
       // Optionally, disable all buttons after selection
       Array.from(options.children).forEach((btn) => (btn.disabled = true));
     });
@@ -257,13 +306,12 @@ const displayNextQuestion = () => {
 };
 nextButton.addEventListener("click", displayNextQuestion);
 
-
 // Navbar functionality
 
-document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-  link.addEventListener('click', function() {
-    var navbarCollapse = document.getElementById('navbarNav');
-    if (navbarCollapse.classList.contains('show')) {
+document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
+  link.addEventListener("click", function () {
+    var navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse.classList.contains("show")) {
       var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
       bsCollapse.hide();
     }
