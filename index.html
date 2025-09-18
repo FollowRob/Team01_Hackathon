@@ -1,4 +1,4 @@
-q<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +16,8 @@ q<!DOCTYPE html>
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <!--Bootstrap-->
     <link
@@ -24,6 +26,15 @@ q<!DOCTYPE html>
       integrity="sha384-    sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-    sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>## Quiz Game ##</title>
   </head>
@@ -54,6 +65,32 @@ q<!DOCTYPE html>
         </div>
       </div>
     </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#learn-more">Learn More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <!--Hero image w/ button and game start-->
@@ -66,6 +103,18 @@ q<!DOCTYPE html>
           >
         </div>
       </header>
+      <!--Hero image w/ button and game start-->
+      <header id="header" class="py-5 bg-light text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
+          <p class="lead mb-4">Test your knowledge and challenge yourself!</p>
+          <a href="quiz.html" class="btn btn-outline-dark btn-lg mt-3"
+            >Click to start game</a
+          >
+        </div>
+      </header>
+      <h1>hello</h1>
+      <!--Section with info about the quiz-->
 
       <!--Quiz game w/ javascript goes here-->
       <section id="quiz-game">
@@ -81,6 +130,34 @@ q<!DOCTYPE html>
     <!--Footer with links to social media and copyright-->
     <footer>
       <!-- Bootstrap 5 Footer -->
+      <footer class="custom-footer text-center text-lg-start mt-5">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Team01 Hackathon</h5>
+              <p>&copy; 2025 Team01. All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="footer-link">Home</a></li>
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Follow Us</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="footer-link">Twitter</a></li>
+                <li><a href="#" class="footer-link">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3 footer-bottom">
+          Made with ❤️ for the Hackathon
+        </div>
+      </footer>
       <footer class="custom-footer text-center text-lg-start mt-5">
         <div class="container p-4">
           <div class="row">
