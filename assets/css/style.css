@@ -24,11 +24,6 @@ main {
     background-color: var(--background-color);
 }
 
-section {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
 h1 {
   font-family: var(--primary-font);
   color: var(--background-color);
@@ -49,8 +44,8 @@ main {
 }
 
 section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -187,7 +182,7 @@ section {
     background: url(../images/coding-photo-xsmall.jpg) no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
   }
 }
 
@@ -202,7 +197,7 @@ section {
     background: url(../images/coding-photo-small.jpg) no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
   }
 
 }
