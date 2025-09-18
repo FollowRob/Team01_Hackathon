@@ -200,9 +200,9 @@ const quizContainer = document.querySelector(".quiz-container");
 const question = document.querySelector(".quiz-container .question");
 const options = document.querySelector(".quiz-container .options");
 const nextButton = document.querySelector(".quiz-container .next-button");
-const quizResult = document.querySelector(".quiz-result");
+const results = document.querySelector(".results");
 const answerExplanation = document.querySelector(".answer-explanation");
-const retakeQuizButton = document.querySelector(".quiz-result .retake-button");
+const retakeQuizButton = document.querySelector(".retake-button");
 if (retakeQuizButton) {
   retakeQuizButton.addEventListener("click", setupQuiz);
 }
@@ -214,6 +214,7 @@ const MAX_QUESTION = 11;
 
 // Function to shuffle the options array
 function shuffleArray(array) {
+  //Shuffles Array
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -260,6 +261,7 @@ const createQuestion = () => {
       if (o.trim() === quizData[currentIndex].correct.trim()) {
         option.classList.add("correct");
         correctMessage = "Correct!";
+        score++;
       } else {
         option.classList.add("incorrect");
         correctMessage = "Incorrect.";
@@ -284,7 +286,8 @@ const createQuestion = () => {
 
 // Function to display quiz results
 const displayquizResult = () => {
-  window.location.href = "results.html";
+  let resultMessage = `You scored ${score} out of ${MAX_QUESTION}.`;
+  results.textContent = resultMessage;
 };
 
 function setupQuiz() {
