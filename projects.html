@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+
+    <!-- Link to external style libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-    sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome 6 (for fa-solid fa-house) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  
+
+    <title>NewbieToNinja</title>
+  </head>
+
+  <body>
+    <!--Navbar using bootstrap-->
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="#learn-more">Learn More</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!--Hero image w/ button and game start-->
+    <header id="header" class="hero py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Test Your Mettle</h1>
+        <p class="hero-text">Here you'll find a comprehensive list of projects suitable for an aspiring full-stack developer!</p>
+    </div>
+  </header>
+
+
+    <!--Section using 3x bootstrap cards w/ links to resources-->
+    <!--Add pictures w/ device scalability-->
+    <section id="learn-more" class="learn-more container">
+
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">HTML Focus</h5>
+              <p class="card-text"><h6>Personal Bio Page</h6>
+                Your name, a short bio, and a list of hobbies. <br>
+                Use &lt;h1&gt;, &lt;p&gt;, and &lt;ul&gt;. <br>
+                Bonus: Add a photo with &lt;img&gt;. <br>
+                <br>
+                <h6>Basic Contact Page</h6>
+                Include a simple form with:
+                Name field (&lt;input type="text"&gt;) <br>
+                Email field (&lt;input type="email"&gt;) <br>
+                Message box (&lt;textarea&gt;) <br>
+                Submit button (&lt;button&gt;). <br>
+                Great for practicing form semantics. <br>
+                <br>
+                <h6>Reading List</h6>
+                A list of books or articles you want to read. <br>
+                Use &lt;ul&gt; or &lt;ol&gt; with links to external resources (&lt;a&gt;). <br>
+                <br>
+                <h6>Recipe Page</h6>
+                Title of a dish, ingredients as a list, and steps as ordered list. <br>
+                Practice using &lt;section&gt;, &lt;article&gt;, and &lt;figure&gt; for structure. <br>
+                <br>
+                <h6>HTML Resume</h6>
+                Sections: Contact info, work experience, education, skills. <br>
+                Use proper headings (&lt;h2&gt;) and semantic layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">CSS Focus</h5>
+              <p class="card-text"><h6>Profile Card</h6>
+                Practice: borders, padding, text alignment, background colors. <br>
+                <br>
+                HTML: Your name, profile picture, a short bio, and social links. <br>
+                CSS:
+                Add rounded corners (border-radius).
+                Style the profile picture as a circle.
+                Center the card with margin and text-align: center. <br>
+                <br>
+                <h6>Colour Palette Display</h6>
+                Practice: colors, flexbox/grid, hover effects. <br>
+                Create a grid of colored boxes representing a palette. <br>
+                CSS:
+                Use display: grid to align them nicely.
+                Add hover effects like opacity or a slight scale-up. <br>
+                <br>
+                Bonus: Label each color using &lt;p&gt; tags and style with contrasting text. <br>
+                <br>
+                <h6>Digital Business Card</h6>
+                Practice: typography, spacing, positioning. <br>
+                Content: Name, role, contact details, and a short tagline. <br>
+                CSS:
+                Use a stylish Google Font. <br>
+                Play with spacing using padding and line-height. <br>
+                Create a clean, modern "business card" feel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">Javascript Focus</h5>
+              <p class="card-text"><h6>Counter App</h6>
+                Core skills: DOM manipulation, event listeners, variables. <br>
+                <br>
+                What it does:
+                A number starts at 0, and you have +, -, and Reset buttons to change it.
+                Key JS concepts:
+                addEventListener() to detect button clicks. <br>
+                <br>
+                Updating text content using element.textContent.
+                Basic if conditions (e.g., prevent negative numbers). <br>
+                <br>
+                Extra challenge:
+                Make the counter text change color when the number is positive or negative. <br>
+                <br>
+                <h6>To Do List</h6>
+                Core skills: creating/deleting elements, loops, event handling. <br>
+                <br>
+                What it does:
+                Lets you add tasks to a list and mark them as complete. <br>
+                Key JS concepts:
+                Capturing input field text (.value).
+                Dynamically creating list items (document.createElement).
+                Toggling a "completed" class when clicked. <br>
+                <br>
+                Updating text content using element.textContent.
+                Basic if conditions (e.g., prevent negative numbers). <br>
+                <br>
+                Extra challenge:
+                Add a "Clear Completed" button to remove finished tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!--Footer with links to social media and copyright-->
+  <!-- Bootstrap 5 Footer -->
+  <footer id="footer" class="custom-footer text-center text-lg-start mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Team01 Hackathon</h5>
+          <p>&copy; 2025 Team01. All rights reserved.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#header" class="footer-link"><i class="fa-solid fa-house me-2"></i> Home</a></li>
+            <li><a href="#footer" class="footer-link"><i class="fa-solid fa-phone me-2"></i> Contact</a></li>
+            <li><a href="quiz.html" class="footer-link"><i class="fa-solid fa-brain me-2"></i> Quiz</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <ul class="list-unstyled mb-0">
+
+            <li>
+              <a href="https://www.twitter.com" class="footer-link" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="footer-link" target="_blank" rel="noopener"
+                aria-label="Visit our GitHub page (opens in a new tab)"><i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="footer-link" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center p-3 footer-bottom">
+        Made with ❤️ for the Hackathon
+      </div>
+    </footer>
+
+    <!-- Pull external Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
