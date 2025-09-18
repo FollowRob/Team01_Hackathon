@@ -30,7 +30,26 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   
 
-    <title>## Quiz Game ##</title>
+    <title>NewbieToNinja</title>
+
+    <!-- Favicon -->
+     <!-- SVG for modern browsers -->
+<link rel="icon" href="assets/favicon/favicon-newbietoninja.svg" type="image/svg+xml">
+
+<!-- PNG fallbacks -->
+<link rel="icon" href="assets/favicon/newbietoninja-32.png" sizes="32x32">
+<link rel="icon" href="assets/favicon/newbietoninja-16.png" sizes="16x16">
+
+<!-- Classic ICO fallback -->
+<link rel="icon" href="assets/favicon/favicon-newbietoninja.ico" sizes="any">
+
+<!-- iOS home screen -->
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon-n2n.png">
+
+<!-- Optional larger sizes -->
+<link rel="icon" href="assets/favicon/newbietoninja-256.png" sizes="192x192">
+<link rel="icon" href="assets/favicon/newbietoninja-512.png" sizes="512x512">
+  
   </head>
 
   <body>
@@ -39,7 +58,8 @@
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">LOGO</a>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/domo-logo.png" alt="DOMo Logo">
+        NewbieToNinja</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,10 +82,66 @@
       <div class="container">
         <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
         <p class="hero-text">Test your knowledge and challenge yourself!</p>
-        <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3" aria-label="Opens quiz game in new tab">Click to start game</a>
+        <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
+        <button type="button" class="btn btn-outline-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+          Instructions
+        </button>
     </div>
   </header>
 
+  <!-- Instructions Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalCenterTitle">How to Play</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Start the quiz</h5>
+          <p>
+          Click “Start” (or open the quiz page). The first question will load automatically.
+          </p> 
+          <h5>Read the question</h5>
+          <p>
+            Each question shows a progress counter like “1/11” so you always know where you are.
+          </p> 
+          <h5>Choose one answer</h5>
+          <p>
+            Tap/click a single option, your choice locks in immediately.<br>
+            Correct answers highlight as green, incorrect choices highlight as red.<br>
+          </p> 
+          <h5>Move to the next question</h5>
+          <p>
+            Click Next to continue. Answers can’t be changed after you select them.
+          </p> 
+          <h5>Finish & results</h5>
+          <p>
+            After the last question, you’ll be taken to the results page.
+          </p> 
+          <h5>Retake the quiz</h5>
+          <p>
+            Want another go? Click Retake Quiz to restart from Question 1.
+          </p> 
+          <h5>Tips</h5>
+          <p>
+            <strong>No time limit:</strong> Take as long as you need on each question.<br>
+            <strong>One device at a time:</strong> Best experienced on a single tab/window. <br>
+            <strong>Accessibility:</strong> Options are buttons—keyboard users can navigate with Tab and select with Enter/Space.
+          </p> 
+          <h5>Troubleshooting</h5>
+          <p>
+            If buttons don’t respond, try refreshing the page. <br>
+            If the navbar covers content on mobile, close it and continue (it auto-collapses after a menu tap). <br>
+            If you’re stuck on the results page, use Retake Quiz to restart. <br>
+          </p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--Quiz game w/ javascript goes here-->
     <section id="quiz-game">
@@ -136,56 +212,57 @@
   </main>
 
 
-  <!--Footer with links to social media and copyright-->
-  <!-- Bootstrap 5 Footer -->
-  <footer id="footer" class="custom-footer text-center text-lg-start mt-5">
+  <footer id="footer" class="custom-footer mt-5">
     <div class="container p-4">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Team01 Hackathon</h5>
-          <p>&copy; 2025 Team01. All rights reserved.</p>
+      <div class="row gy-4">
+
+        <!-- Center column: Team01 Hackathon + ❤️ -->
+        <div class="col-12 col-lg-6 text-center order-1 order-lg-2">
+          <p>Made with ❤️ for the Hackathon</p>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+        <!-- Left column: Follow Us -->
+        <div class="col-12 col-lg-3 text-center text-lg-start order-2 order-lg-1">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="https://www.twitter.com" class="footer-link" target="_blank" rel="noopener"><i
+                  class="fab fa-twitter me-2"></i> Twitter</a></li>
+            <li><a href="https://github.com/FollowRob/Team01_Hackathon" class="footer-link" target="_blank" rel="noopener"><i
+                  class="fab fa-github me-2"></i> GitHub</a></li>
+            <li><a href="https://www.facebook.com" class="footer-link" target="_blank" rel="noopener"><i
+                  class="fab fa-facebook me-2"></i> Facebook</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Right column: Navigation Links -->
+        <div class="col-12 col-lg-3 text-center text-lg-end order-3">
           <h5 class="text-uppercase">Links</h5>
           <ul class="list-unstyled mb-0">
-            <li><a href="#header" class="footer-link"><i class="fa-solid fa-house me-2"></i> Home</a></li>
-            <li><a href="#footer" class="footer-link"><i class="fa-solid fa-phone me-2"></i> Contact</a></li>
+            <li><a href="index.html" class="footer-link"><i class="fa-solid fa-house me-2"></i> Home</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="fa-solid fa-code"></i></i> Projects</a></li>
             <li><a href="quiz.html" class="footer-link"><i class="fa-solid fa-brain me-2"></i> Quiz</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Follow Us</h5>
-          <ul class="list-unstyled mb-0">
 
-            <li>
-              <a href="https://www.twitter.com" class="footer-link" target="_blank" rel="noopener"
-                aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>
-            <li>
-              <a href="https://github.com/" class="footer-link" target="_blank" rel="noopener"
-                aria-label="Visit our GitHub page (opens in a new tab)"><i class="fab fa-github"></i> GitHub</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com" class="footer-link" target="_blank" rel="noopener"
-                aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i> Facebook</a>
-            </li>
-
-          </ul>
-        </div>
       </div>
 
-      <div class="text-center p-3 footer-bottom">
-        Made with ❤️ for the Hackathon
-      </div>
-    </footer>
+    </div>
 
-    <!-- Pull external Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    <!-- Footer bottom: copyright -->
+    <div class="text-center p-3 footer-bottom">
+      © 2025 Team01. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Pull external Javascript -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
+
