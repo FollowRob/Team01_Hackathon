@@ -218,6 +218,11 @@ h3 {
     background-blend-mode: multiply;
     min-height: 100vh;
   }
+
+  .quiz-container {
+    min-height: 100vh;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -233,6 +238,10 @@ h3 {
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
+    min-height: 100vh;
+  }
+
+  .quiz-container {
     min-height: 100vh;
   }
 }
