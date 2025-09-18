@@ -275,7 +275,8 @@ const createQuestion = () => {
         });
       }
       // Show explanation
-      console.log(correctMessage + quizData[currentIndex].explanation);
+      answerExplanation.textContent =
+        correctMessage + quizData[currentIndex].explanation;
 
       // Optionally, disable all buttons after selection
       Array.from(options.children).forEach((btn) => (btn.disabled = true));
