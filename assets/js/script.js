@@ -256,3 +256,16 @@ const displayNextQuestion = () => {
   }
 };
 nextButton.addEventListener("click", displayNextQuestion);
+
+
+// Navbar functionality
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse.classList.contains('show')) {
+      var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+      bsCollapse.hide();
+    }
+  });
+});
