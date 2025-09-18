@@ -172,12 +172,10 @@ h3 {
   }
   
   .hero {
-    min-height: 70vh;
-  }
-
-  #hero {
-    background: url(../assets/images/coding-photo-xsmall.jpg);
-    background-size: cover;
+    background: url(../images/coding-photo-xsmall.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    min-height: 60vh;
   }
 }
 
@@ -189,13 +187,12 @@ h3 {
   }
 
   .hero {
-    min-height: 70vh;
+    background: url(../images/coding-photo-small.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    min-height: 60vh;
   }
 
-  #hero {
-    background: url(../assets/images/coding-photo-small.jpg);
-    background-size: cover;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -206,13 +203,12 @@ h3 {
   }
 
   .hero {
-    min-height: 70vh;
+    background: url(../images/coding-photo-medium.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    min-height: 60vh;
   }
 
-  #hero {
-    background: url(../assets/images/coding-photo-medium.jpg);
-    background-size: cover;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -224,12 +220,10 @@ h3 {
   }
 
   .hero {
+    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
     min-height: 50vh;
-  }
-
-  #hero {
-    background: url(../assets/images/coding-photo-large.jpg);
-    background-size: cover;
   }
 
 }
@@ -243,12 +237,10 @@ h3 {
   }
 
   .hero {
+    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
     min-height: 50vh;
-  }
-
-  #hero {
-    background: url(../assets/images/coding-photo-large.jpg);
-    background-size: cover;
   }
 
 }
