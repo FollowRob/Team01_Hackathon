@@ -19,6 +19,16 @@ body {
     color: var(--secondary-color);
 }
 
+main {
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
 h1 {
     font-family: var(--primary-font);
     color: var(--background-color);
@@ -32,16 +42,6 @@ h3 {
     margin-bottom: 1rem;
 }
 
-main {
-    margin: auto;
-    background-color: var(--background-color);
-}
-
-section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
-
 
 /* NAVBAR STYLES */
 
@@ -49,7 +49,6 @@ section {
     background-color: var(--primary-color);
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 5vh;
 }
 
 .navbarNav {
@@ -59,7 +58,7 @@ section {
 /* HERO SECTION STYLES */
 
 .hero {
-    background: url(../images/pexels-harold-vasquez-853421-2653362.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.6); /* dark layer */
     background-blend-mode: multiply;
     min-height: 40vh; /* Adjust as needed */
@@ -168,25 +167,89 @@ section {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { /* xs */
   /* ...your styles for xs screens... */
+  .navbar{
+    min-height: 10vh;
+  }
+  
+  .hero {
+    min-height: 70vh;
+  }
+
+  #hero {
+    background: url(../assets/images/coding-photo-xsmall.jpg);
+    background-size: cover;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { /* sm */
   /* ...your styles for sm screens... */
+  .navbar{
+    min-height: 10vh;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  #hero {
+    background: url(../assets/images/coding-photo-small.jpg);
+    background-size: cover;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { /* md */
   /* ...your styles for md screens... */
+  .navbar{
+    min-height: 10vh;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  #hero {
+    background: url(../assets/images/coding-photo-medium.jpg);
+    background-size: cover;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { /* lg */
   /* ...your styles for lg screens... */
+
+  .navbar{
+    min-height: 5vh;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+
+  #hero {
+    background: url(../assets/images/coding-photo-large.jpg);
+    background-size: cover;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { /* xl */
   /* ...your styles for xl screens... */
+
+  .navbar{
+    min-height: 5vh;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+
+  #hero {
+    background: url(../assets/images/coding-photo-large.jpg);
+    background-size: cover;
+  }
+
 }
 
