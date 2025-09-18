@@ -50,17 +50,6 @@ h3 {
 }
 
 
-main {
-  margin: auto;
-  background-color: var(--background-color);
-}
-
-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-
 /* NAVBAR STYLES */
 
 .navbar {
