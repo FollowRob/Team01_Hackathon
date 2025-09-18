@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Variables */
 :root {
-  --primary-font: "Roboto Condensed", "sans-serif"; /* Headings */
+  --primary-font: "Roboto condensed", "sans-serif"; /* Headings */
   --secondary-font: "Roboto", "sans-serif"; /* Body */
-  --primary-color: #2e7d32; /* Strong blue: modern, tech-focused, trustworthy */
+  --primary-color: #263238; /* Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused */
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
+  --tertiary-color: #797979; /* Light gray hovered buttons etc */
   --accent-color: #d84315; /* Deeper Coral for better contrast */
   --background-color: #ffffff; /* Pure white for maximum readability */
   --quiz-game-color: #23272a;
@@ -20,13 +21,13 @@ body {
 }
 
 main {
-    margin: auto;
-    background-color: var(--background-color);
+  margin: auto;
+  background-color: var(--background-color);
 }
 
 section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 h1 {
@@ -35,7 +36,13 @@ h1 {
   margin-top: 0.5rem;
 }
 
-h2,
+h2 {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 h3 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
@@ -43,25 +50,13 @@ h3 {
 }
 
 
-main {
-  margin: auto;
-  background-color: var(--background-color);
-}
-
-section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-
 /* NAVBAR STYLES */
 
 .navbar {
-
   background-color: var(--primary-color);
   padding-left: 30px;
   padding-right: 30px;
-  min-height: 5vh;
+  min-height: 3rem;
 }
 
 .navbarNav {
@@ -71,15 +66,16 @@ section {
 /* HERO SECTION STYLES */
 
 .hero {
-    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
-    background-color: rgba(0, 0, 0, 0.6); /* dark layer */
-    background-blend-mode: multiply;
-    min-height: 40vh; /* Adjust as needed */
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url(../images/coding-photo-large.jpg) no-repeat center
+    center/cover;
+  background-color: rgba(0, 0, 0, 0.6); /* dark layer */
+  background-blend-mode: multiply;
+  min-height: 40vh; /* Adjust as needed */
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-text {
@@ -137,6 +133,24 @@ section {
   box-shadow: 0 2px 8px rgba(27, 94, 32, 0.08);
 }
 
+.quiz-container .options button.incorrect {
+  background: var(--accent-color);
+  color: var(--background-color);
+  border-color: var(--accent-color);
+}
+
+.quiz-container .options button.incorrect:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+  border-color: var(--accent-color);
+}
+
+.quiz-container .options button.correct {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+}
+
 .quiz-container .options button:focus,
 .quiz-container .options label:focus-within {
   border-color: var(--accent-color);
@@ -145,15 +159,27 @@ section {
 
 .quiz-container .options button:hover,
 .quiz-container .options label:hover {
-  background: var(--accent-color);
-  color: var(--secondary-color);
-  border-color: var(--accent-color);
+  background: var(--tertiary-color);
+  color: var(--background-color);
+  border-color: var(--tertiary-color);
+}
+
+.quiz-container .options button.correct:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
 }
 
 /* LEARN MORE */
 
 .learn-more {
   background-color: var(--background-color);
+}
+
+.card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.02);
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 /* Custom Footer Styling */
@@ -171,90 +197,93 @@ section {
 }
 
 .footer-link:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 /* Media Queries for screen responsiveness */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { /* xs */
+@media (max-width: 575.98px) {
+  /* xs */
   /* ...your styles for xs screens... */
-  .navbar{
-    min-height: 10vh;
+  .navbar {
+    min-height: 2.5rem;
   }
-  
+
   .hero {
-    background: url(../images/coding-photo-xsmall.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-xsmall.jpg) no-repeat center
+      center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
   }
+
+  .quiz-container {
+    min-height: 100vh;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { /* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* sm */
   /* ...your styles for sm screens... */
-  .navbar{
-    min-height: 10vh;
+  .navbar {
+    min-height: 2.5rem;
   }
 
   .hero {
-    background: url(../images/coding-photo-small.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-small.jpg) no-repeat center
+      center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
   }
 
+  .quiz-container {
+    min-height: 100vh;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { /* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* md */
   /* ...your styles for md screens... */
-  .navbar{
-    min-height: 10vh;
-  }
 
   .hero {
-    background: url(../images/coding-photo-medium.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-medium.jpg) no-repeat center
+      center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 60vh;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { /* lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* lg */
   /* ...your styles for lg screens... */
 
-  .navbar{
-    min-height: 5vh;
-  }
-
   .hero {
-    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-large.jpg) no-repeat center
+      center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 50vh;
   }
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { /* xl */
+@media (min-width: 1200px) {
+  /* xl */
   /* ...your styles for xl screens... */
 
-  .navbar{
-    min-height: 5vh;
-  }
-
   .hero {
-    background: url(../images/coding-photo-large.jpg) no-repeat center center/cover;
+    background: url(../images/coding-photo-large.jpg) no-repeat center
+      center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 50vh;
   }
-
 }
-
