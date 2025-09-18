@@ -182,9 +182,11 @@ h3 {
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
+
 /* Custom Footer Styling */
 .custom-footer {
   background: var(--background-color);
+  margin-top: auto; /* Sticky footer: push to bottom */
 }
 
 .custom-footer h5 {
@@ -200,6 +202,9 @@ h3 {
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+
+/* Remove duplicate sticky footer color overrides, keep only margin-top for stickiness */
 
 /* Media Queries for screen responsiveness */
 
