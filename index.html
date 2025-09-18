@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="Description" content="Enter your description here" />
+    <!-- Link to external style libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-  <!-- Link to external style libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-    sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-
-  <!-- Font Awesome 6 (for fa-solid fa-house) -->
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-    sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome 6 (for fa-solid fa-house) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  
 
-  <!-- Link to custom CSS file -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <title>## Quiz Game ##</title>
+  </head>
 
-  <title>## Quiz Game ##</title>
-</head>
+  <body>
+    <!--Navbar using bootstrap-->
 
-<body>
-  <!--Navbar using bootstrap-->
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
@@ -54,9 +63,66 @@
         <h1 class="display-4 fw-bold mb-3">Welcome to the Quiz</h1>
         <p class="hero-text">Test your knowledge and challenge yourself!</p>
         <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
-      </div>
-    </header>
+        <button type="button" class="btn btn-outline-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+          Instructions
+        </button>
+    </div>
+  </header>
 
+  <!-- Instructions Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalCenterTitle">How to Play</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Start the quiz</h5>
+          <p>
+          Click “Start” (or open the quiz page). The first question will load automatically.
+          </p> 
+          <h5>Read the question</h5>
+          <p>
+            Each question shows a progress counter like “1/11” so you always know where you are.
+          </p> 
+          <h5>Choose one answer</h5>
+          <p>
+            Tap/click a single option, your choice locks in immediately.<br>
+            <br>
+            Correct answers highlight as green, incorrect choices highlight as red.<br>
+          </p> 
+          <h5>Move to the next question</h5>
+          <p>
+            Click Next to continue. Answers can’t be changed after you select them.
+          </p> 
+          <h5>Finish & results</h5>
+          <p>
+            After the last question, you’ll be taken to the results page.
+          </p> 
+          <h5>Retake the quiz</h5>
+          <p>
+            Want another go? Click Retake Quiz to restart from Question 1.
+          </p> 
+          <h5>Tips</h5>
+          <p>
+            <strong>No time limit:</strong> Take as long as you need on each question.<br>
+            <strong>One device at a time:</strong> Best experienced on a single tab/window. <br>
+            <strong>Accessibility:</strong> Options are buttons—keyboard users can navigate with Tab and select with Enter/Space.
+          </p> 
+          <h5>Troubleshooting</h5>
+          <p>
+            If buttons don’t respond, try refreshing the page. <br>
+            If the navbar covers content on mobile, close it and continue (it auto-collapses after a menu tap). <br>
+            If you’re stuck on the results page, use Retake Quiz to restart. <br>
+          </p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--Quiz game w/ javascript goes here-->
     <section id="quiz-game">
@@ -134,6 +200,7 @@
         </div>
 
       </div>
+
     </div>
 
     <!-- Footer bottom: Terms and Conditions -->
@@ -154,3 +221,4 @@
 </body>
 
 </html>
+
