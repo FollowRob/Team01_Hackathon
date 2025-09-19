@@ -36,6 +36,10 @@
   <!-- Optional larger sizes -->
   <link rel="icon" href="assets/favicon/newbietoninja-256.png" sizes="192x192">
   <link rel="icon" href="assets/favicon/newbietoninja-512.png" sizes="512x512">
+
+  <!-- Add hero image character to fetch early -->
+  <link rel="preload" as="image" href="assets/images/webp/DOMo-scaled-compressed.webp" type="image/webp">
+  
 </head>
 
 <body>
@@ -61,13 +65,20 @@
     </div>
   </nav>
 
-
   <main>
+
     <!--Hero image w/ button and game start-->
-    <header id="header" class="hero py-5 text-center">
+    <header id="header" class="hero py-3 text-center">
       <div class="container">
         <h1 class="display-4 fw-bold mb-3">Welcome to NewbieToNinja</h1>
-        <img class="hero-character img-fluid" src="assets/images/DOMo-scaled.webp" alt="A cartoon ninja character">
+        <picture>
+            <!-- Default/fallback image for larger screens -->
+             <img class="hero-character img-fluid"
+             src="assets/images/webp/DOMo-scaled-compressed.webp"
+             alt="A cartoon ninja character"
+             width="200" height="200"
+            loading="eager">
+          </picture>
         <p class="hero-text">From zero to hero, become a coding ninja <br>
           with help from our coding Ninja, DOMo!
         </p>
