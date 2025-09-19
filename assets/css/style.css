@@ -7,9 +7,9 @@
   --primary-color: #263238; /* Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused */
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
   --tertiary-color: #797979; /* Light gray hovered buttons etc */
-  --accent-color: #d84315; /* Deeper Coral for better contrast */
+  --accent-color: #d84315; /* Highlight colour, used for incorrect answers. */
+  --accent-color-two: #4bad3c; /* Another highlight colour, for correct messages. */
   --background-color: #ffffff; /* Pure white for maximum readability */
-  --quiz-game-color: #23272a;
 }
 
 /* Global styles */
