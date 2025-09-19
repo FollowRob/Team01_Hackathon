@@ -1,4 +1,8 @@
-#  NewbieToNinja
+<center><h1>NewbieToNinja</h1></center>
+
+<p align="center">
+  <img src="assets/images/domo-correct.png" />
+</p>
 
 ## Description
 
@@ -51,6 +55,14 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 - [Font Awesome](https://fontawesome.com/)
 
+## Future development
+
+There are plans for some future development in the form of:
+- Updating the Javascript in the timer to the latest version.
+- Adding another two pages (already underway)
+   - one to provide some tips to newbie developers
+   - the other which will contain a "day in the life of a developer" where users will be able to look over the notes or annecdotes written by real developers during their day to day work.
+
 ## Tools and technologies
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
@@ -69,6 +81,7 @@ Testing has been completed by using:
 - [W3 validator](https://validator.w3.org/detailed.html) for validating the HTML pages
 - [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) for the CSS aspects
 - [JSHint](https://jshint.com/) for validating the Javascript
+   - There are some issues in JSHint with the Javascript as some of the JS was developed using references from an older version.
 - The deployed project was tested with the [Lighthouse audit tool](https://developer.chrome.com/docs/lighthouse) to check for any issues. 
 
 ## Deployment
@@ -121,11 +134,13 @@ You can fork this repository by using the following steps:
 
 ## Resources
 
-ChatGPT
-GitHub Co-pilot
-[Coolors](https://coolors.co/)
-
-### Media
-[Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
-
-### Credits
+- [ChatGPT](https://chatgpt.com/)
+- [GitHub Co-pilot](https://github.com/features/copilot)
+- [Coolors](https://coolors.co/)
+- [W3 Schools](https://www.w3schools.com/)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+- [Readme example - Kera Cudmore](https://github.com/kera-cudmore/readme-examples?tab=readme-ov-file)
+- [Readme example - Lewis Dillon](https://github.com/LewisMDillon/Bushy-Park-Social-Tennis/blob/main/README.md)
+- [Trello](https://trello.com/)
+- [Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
+- [Funy Coder  Youtube Channel](https://www.youtube.com/@funycoder) 
