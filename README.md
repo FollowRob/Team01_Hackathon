@@ -1,10 +1,17 @@
-#  NewbieToNinja
+<center><h1>NewbieToNinja</h1></center>
+
+<p align="center">
+  <img src="assets/images/domo-correct.png" />
+</p>
 
 ## Description
 
-<u>NewbieToNinja</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development (questions will be relevant for beginners) and <u>**be able to access information about beginning their journey and sign up for an email newsletter.**</u>
+<u>NewbieToNinja</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development and find some little mini projects to have a go at by themselves. 
+The theme of the website is based around a ninja training dojo as a place to learn and practice coding with the aid of a master (a ninja coder named DOMo).
 
 ## UX
+
+![Mockup](assets/images/readme/all-devices-black.png)
 
 ### Layout
 
@@ -48,17 +55,15 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 - [Font Awesome](https://fontawesome.com/)
 
-## Features
+## Future development
 
-### Homepage
+There are plans for some future development in the form of:
+- Updating the Javascript in the timer to the latest version.
+- Adding another two pages (already underway)
+   - one to provide some tips to newbie developers
+   - the other which will contain a "day in the life of a developer" where users will be able to look over the notes or annecdotes written by real developers during their day to day work.
 
-### Quiz
-
-### Projects
-
-### Tips
-
-### Career
+## Tools and technologies
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
@@ -71,6 +76,14 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 ## Testing
 
+Testing has been completed by using:
+- [GitHub Co-pilot](https://github.com/features/copilot) to assist with debugging during the coding stages. 
+- [W3 validator](https://validator.w3.org/detailed.html) for validating the HTML pages
+- [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) for the CSS aspects
+- [JSHint](https://jshint.com/) for validating the Javascript
+   - There are some issues in JSHint with the Javascript as some of the JS was developed using references from an older version.
+- The deployed project was tested with the [Lighthouse audit tool](https://developer.chrome.com/docs/lighthouse) to check for any issues. 
+
 ## Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
@@ -79,7 +92,7 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [**INSERT LINK TO DEPLOYED SITE**]()
+The live depolyed site can be found [**Here**](https://followrob.github.io/Team01_Hackathon/)
 
 ### Local Deployment
 
@@ -121,7 +134,13 @@ You can fork this repository by using the following steps:
 
 ## Resources
 
-### Media
-[Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
-
-### Credits
+- [ChatGPT](https://chatgpt.com/)
+- [GitHub Co-pilot](https://github.com/features/copilot)
+- [Coolors](https://coolors.co/)
+- [W3 Schools](https://www.w3schools.com/)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+- [Readme example - Kera Cudmore](https://github.com/kera-cudmore/readme-examples?tab=readme-ov-file)
+- [Readme example - Lewis Dillon](https://github.com/LewisMDillon/Bushy-Park-Social-Tennis/blob/main/README.md)
+- [Trello](https://trello.com/)
+- [Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
+- [Funy Coder  Youtube Channel](https://www.youtube.com/@funycoder) 
