@@ -1,8 +1,8 @@
-# Project Title
+#  NewbieToNinja
 
 ## Description
 
-The <u>**Project title**</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development (questions will be relevant for beginners) and <u>**be able to access information about beginning their journey and sign up for an email newsletter.**</u>
+<u>NewbieToNinja</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development (questions will be relevant for beginners) and <u>**be able to access information about beginning their journey and sign up for an email newsletter.**</u>
 
 ## UX
 
@@ -19,16 +19,15 @@ A minimal and clean layout was chosen to avoid any overstimulation on the unders
 
 The website uses relatively bright colours with some darker ones used for both contrast and accessibility. The aim was to keep the colour scheme as light and friendly as possible as we want users to associate positivity with their desire to learn to code.
 
-The colour palette was selected by utilising both ChatGPT and [Coolors](https://coolors.co/)
+The colour palette was selected by utilising both ChatGPT and [Coolors](https://coolors.co/). The colours were chosen for their aesthetic appeal and readability.
 Colours chosen were:
 
-- #2E7D32 **USED FOR X**
-- #66BB6A **USED FOR X**
-- #FBC02D **USED FOR X**
-- #FF7043 **USED FOR X**
-- #26A69A **USED FOR X**
-- #F9FBE7 **USED FOR X**
-- #212121 **USED FOR X**
+- #263238 **Primary Colour - Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused.**
+- #1a1a1a **Secondary Colour - Near-black for strong text contrast.**
+- #797979 **Tertiary Colour - Light gray for hovered buttons etc.**
+- #d84315 **Accent Colour - Highlight colour, used for incorrect answers.**
+- #4bad3c **Accent Colour Two - Another highlight colour, for correct messages.**
+- #ffffff **Background Colour - Pure white for maximum readability.**
 
 ![Colour Palette chosen](assets/images/readme/colours.png)
 
@@ -36,9 +35,14 @@ Colours chosen were:
 
 Typography and Font Awesome libraries were used for typography and iconography.
 
-The **"X"** Google font was used for all text elements on the site.
+Primary Font - Used for Headings.
 
-- [Font name](https://fonts.google.com/)
+- [Merriweather](https://fonts.google.com/specimen/Merriweather)
+
+Secondary Font - Used for body text.
+
+- [Roboto](https://fonts.google.com/?query=Roboto)
+
 
 Font Awesome was used for icons used in the footer and elsewhere.
 
@@ -46,15 +50,15 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 ## Features
 
-### Page 1
+### Homepage
 
 ### Quiz
 
-### Page 2
+### Projects
 
-## Future development
+### Tips
 
-## Tools and technologies
+### Career
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
