@@ -2,9 +2,12 @@
 
 ## Description
 
-<u>NewbieToNinja</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development (questions will be relevant for beginners) and <u>**be able to access information about beginning their journey and sign up for an email newsletter.**</u>
+<u>NewbieToNinja</u> is a website that provides information about becoming a Jr. Developer. It is primarily targeted at members of the public who are looking to start a career in tech/full-stack development. Users of the site will be able to take a quiz on the subject of full-stack development and find some little mini projects to have a go at by themselves. 
+The theme of the website is based around a ninja training dojo as a place to learn and practice coding with the aid of a master (a ninja coder named DOMo).
 
 ## UX
+
+![Mockup](assets/images/readme/all-devices-black.png)
 
 ### Layout
 
@@ -48,17 +51,7 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 - [Font Awesome](https://fontawesome.com/)
 
-## Features
-
-### Homepage
-
-### Quiz
-
-### Projects
-
-### Tips
-
-### Career
+## Tools and technologies
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
@@ -71,6 +64,13 @@ Font Awesome was used for icons used in the footer and elsewhere.
 
 ## Testing
 
+Testing has been completed by using:
+- [GitHub Co-pilot](https://github.com/features/copilot) to assist with debugging during the coding stages. 
+- [W3 validator](https://validator.w3.org/detailed.html) for validating the HTML pages
+- [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) for the CSS aspects
+- [JSHint](https://jshint.com/) for validating the Javascript
+- The deployed project was tested with the [Lighthouse audit tool](https://developer.chrome.com/docs/lighthouse) to check for any issues. 
+
 ## Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
@@ -79,7 +79,7 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [**INSERT LINK TO DEPLOYED SITE**]()
+The live depolyed site can be found [**Here**](https://followrob.github.io/Team01_Hackathon/)
 
 ### Local Deployment
 
@@ -121,6 +121,11 @@ You can fork this repository by using the following steps:
 
 ## Resources
 
+ChatGPT
+GitHub Co-pilot
+[Coolors](https://coolors.co/)
+
 ### Media
+[Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
 
 ### Credits

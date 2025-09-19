@@ -66,7 +66,7 @@ h3 {
 /* HERO SECTION STYLES */
 
 .hero {
-  background: url(../images/webp/coding-photo-large.webp) no-repeat center
+  background: url(../images/webp/coding-dojo-large.webp) no-repeat center
     center/cover;
   background-color: rgba(0, 0, 0, 0.6); /* dark layer */
   background-blend-mode: multiply;
@@ -81,6 +81,15 @@ h3 {
 .hero-text {
   color: #f2f2f2;
   font-size: 1rem;
+}
+
+.hero-character {
+  max-width: 150px; /* Adjust as needed */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* QUIZ SECTION STYLES */
@@ -98,6 +107,11 @@ h3 {
   color: var(--secondary-color);
 }
 
+.quiz-container .question
+{
+  font-size: 20px;
+}
+
 .quiz-container > h2,
 .timer {
   padding: 20px;
@@ -105,6 +119,11 @@ h3 {
   text-align: left;
   display: flex;
   position: relative;
+}
+
+/* Styling for the timer when time is running out */
+.timer.danger {
+    color: var(--accent-color);
 }
 
 /* Options */
@@ -217,15 +236,23 @@ h3 {
   }
 
   .hero {
-    background: url(../images/webp/coding-photo-xsmall.webp) no-repeat center
+    background: url(../images/webp/coding-dojo-xsmall.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 100vh;
   }
 
+  .hero-character {
+    max-width: 120px;
+  }
+
   .quiz-container {
     min-height: 100vh;
+  }
+  
+  .quiz-container .options {
+    grid-template-columns: 1fr;
   }
   
 }
@@ -239,11 +266,15 @@ h3 {
   }
 
   .hero {
-    background: url(../images/webp/coding-photo-small.webp) no-repeat center
+    background: url(../images/webp/coding-dojo-small.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 100vh;
+  }
+
+  .hero-character {
+    max-width: 140px;
   }
 
   .quiz-container {
@@ -265,12 +296,17 @@ h3 {
   /* ...your styles for md screens... */
 
   .hero {
-    background: url(../images/webp/coding-photo-medium.webp) no-repeat center
+    background: url(../images/webp/coding-dojo-medium.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 60vh;
   }
+
+  .hero-character {
+    max-width: 160px;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -279,12 +315,17 @@ h3 {
   /* ...your styles for lg screens... */
 
   .hero {
-    background: url(../images/webp/coding-photo-large.webp) no-repeat center
+    background: url(../images/webp/coding-dojo-large.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 50vh;
   }
+
+  .hero-character {
+    max-width: 180px;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -293,9 +334,10 @@ h3 {
   /* ...your styles for xl screens... */
 
   .hero {
-    background: url(../images/webp/coding-photo-large.webp) no-repeat center
+    background: url(../images/webp/coding-dojo-large.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 50vh;
   }
+}

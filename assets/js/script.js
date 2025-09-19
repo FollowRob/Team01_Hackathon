@@ -347,6 +347,7 @@ function setupQuiz() {
 createQuestion();
 
 const displayNextQuestion = () => {
+  clearInterval(countDown);
   if (questionNumber >= MAX_QUESTION - 1) {
     displayquizResult();
     return;
