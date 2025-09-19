@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-font: "Roboto condensed", "sans-serif"; /* Headings */
-  --secondary-font: "Roboto", "sans-serif"; /* Body */
+  --primary-font: "Merriweather"; /* Headings */
+  --secondary-font: "Roboto"; /* Body */
   --primary-color: #263238; /* Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused */
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
   --tertiary-color: #797979; /* Light gray hovered buttons etc */
@@ -37,22 +37,19 @@ h1 {
   margin-top: 0.5rem;
 }
 
-h2,
+h2 {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 h3 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   margin-bottom: 1rem;
 }
 
-main {
-  margin: auto;
-  background-color: var(--background-color);
-}
-
-section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 
 /* NAVBAR STYLES */
 
@@ -180,6 +177,12 @@ section {
   background-color: var(--background-color);
 }
 
+.card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.02);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
 /* Custom Footer Styling */
 .custom-footer {
   background: var(--background-color);
@@ -214,8 +217,13 @@ section {
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
   }
+
+  .quiz-container {
+    min-height: 100vh;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -231,7 +239,11 @@ section {
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
-    min-height: 60vh;
+    min-height: 100vh;
+  }
+
+  .quiz-container {
+    min-height: 100vh;
   }
 }
 
