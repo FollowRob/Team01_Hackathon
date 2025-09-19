@@ -74,6 +74,15 @@ There are plans for some future development in the form of:
 - [Google Fonts](https://fonts.google.com/) used for fonts on the site.
 - [Coolors](https://coolors.co/) used to generate contrasting and complementary colors
 
+## Reflections on AI
+
+AI such as Chat GPT and Co-pilot was utilised during the project for several functions including tutorials, generation of content and development as well as: 
+- Image generation, e.g. the ‘DOMo’ character used on the website and ‘dojo artwork' in the header.
+- Brand ideas for 'NewbieToNinja, including the name, colour palette and font suggestions.
+- Fixing ‘crisis-point' issues, such as the timer on the quiz page which was showing issues. Co-pilot recognised the issue and provided a hot fix with very little changes to the code.
+- Debugging in VS Code, finding hard to spot issues such as duplication and formatting problems.
+
+
 ## Testing
 
 Testing has been completed by using:
@@ -83,6 +92,8 @@ Testing has been completed by using:
 - [JSHint](https://jshint.com/) for validating the Javascript
    - There are some issues in JSHint with the Javascript as some of the JS was developed using references from an older version.
 - The deployed project was tested with the [Lighthouse audit tool](https://developer.chrome.com/docs/lighthouse) to check for any issues. 
+
+![Lighthouse Audit](assets/images/readme/lighthousescore.png)
 
 ## Deployment
 
