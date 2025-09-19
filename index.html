@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="Description" content="Enter your description here"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="NewbieToNinja – Learn coding from scratch, take quizzes, explore projects, and become a coding ninja with DOMo!">
 
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- Font Awesome 6 (for fa-solid fa-house) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Link to custom CSS file -->
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css">
 
 
   <title>NewbieToNinja</title>
 
     <!-- Favicon -->
     <!-- SVG for modern browsers -->
-    <link
-      rel="icon"
-      href="assets/favicon/favicon-newbietoninja.svg"
-      type="image/svg+xml"
-      />
+    <link rel="icon" href="assets/favicon/favicon-newbietoninja.svg" type="image/svg+xml">
 
   <!-- PNG fallbacks -->
-  <link rel="icon" href="assets/favicon/newbietoninja-32.png" sizes="32x32"/>
-  <link rel="icon" href="assets/favicon/newbietoninja-16.png" sizes="16x16"/>
+  <link rel="icon" href="assets/favicon/newbietoninja-32.png" sizes="32x32">
+  <link rel="icon" href="assets/favicon/newbietoninja-16.png" sizes="16x16">
 
   <!-- Classic ICO fallback -->
-  <link rel="icon" href="assets/favicon/favicon-newbietoninja.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon/favicon-newbietoninja.ico" sizes="any">
 
   <!-- iOS home screen -->
-  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon-n2n.png"/>
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon-n2n.png">
 
   <!-- Optional larger sizes -->
-  <link rel="icon" href="assets/favicon/newbietoninja-256.png" sizes="192x192"/>
-  <link rel="icon" href="assets/favicon/newbietoninja-512.png" sizes="512x512"/>
+  <link rel="icon" href="assets/favicon/newbietoninja-256.png" sizes="192x192">
+  <link rel="icon" href="assets/favicon/newbietoninja-512.png" sizes="512x512">
+
+  <!-- Add hero image character to fetch early -->
+  <link rel="preload" as="image" href="assets/images/webp/DOMo-scaled-compressed.webp" type="image/webp">
+  
 </head>
 
 <body>
@@ -48,7 +48,7 @@
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="assets/images/domo-logo.png" alt="DOMo Logo">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/webp/domo-scaled-nav.webp" alt="DOMo Logo">
         NewbieToNinja</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-label="Toggle navigation">
@@ -65,13 +65,20 @@
     </div>
   </nav>
 
-
   <main>
+
     <!--Hero image w/ button and game start-->
-    <header id="header" class="hero py-5 text-center">
+    <header id="header" class="hero py-3 text-center">
       <div class="container">
         <h1 class="display-4 fw-bold mb-3">Welcome to NewbieToNinja</h1>
-        <img class="hero-character img-fluid" src="assets/images/DOMo-scaled.webp" alt="A cartoon ninja character">
+        <picture>
+            <!-- Default/fallback image for larger screens -->
+             <img class="hero-character img-fluid"
+             src="assets/images/webp/DOMo-scaled-compressed.webp"
+             alt="A cartoon ninja character"
+             width="200" height="200"
+            loading="eager">
+          </picture>
         <p class="hero-text">From zero to hero, become a coding ninja <br>
           with help from our coding Ninja, DOMo!
         </p>
@@ -108,9 +115,9 @@
             </p>
             <h3>Choose one answer</h3>
             <p>
-              Tap/click a single option, your choice locks in immediately.<br/>
+              Tap/click a single option, your choice locks in immediately.<br>
               Correct answers highlight as green, incorrect choices highlight
-              as red.<br />
+              as red.<br>
             </p>
             <h3>Move to the next question</h3>
             <p>
@@ -128,19 +135,19 @@
             <h3>Tips</h3>
             <p>
               <strong>No time limit:</strong> Take as long as you need on each
-              question.<br/>
+              question.<br>
               <strong>One device at a time:</strong> Best experienced on a
-              single tab/window. <br/>
+              single tab/window. <br>
               <strong>Accessibility:</strong> Options are buttons—keyboard
               users can navigate with Tab and select with Enter/Space.
             </p>
             <h3>Troubleshooting</h3>
             <p>
-              If buttons don’t respond, try refreshing the page. <br/>
+              If buttons don’t respond, try refreshing the page. <br>
               If the navbar covers content on mobile, close it and continue
-              (it auto-collapses after a menu tap). <br/>
+              (it auto-collapses after a menu tap). <br>
               If you’re stuck on the results page, use Retake Quiz to restart.
-              <br/>
+              <br>
             </p>
           </div>
           <div class="modal-footer">
@@ -152,16 +159,11 @@
       </div>
     </div>
 
-    <!--Quiz game w/ javascript goes here-->
-    <section id="quiz-game">
-      <div></div>
-    </section>
-
     <!--Section using 3x bootstrap cards w/ links to resources-->
     <!--Add pictures w/ device scalability-->
     <section id="learn-more" class="learn-more container">
 
-      <h2 class="text-center mt-0 mb-5">Learn More</h2>
+      <h2 class="text-center mt-3 mb-4">Learn More</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <article class="card h-100 text-center p-3 d-flex flex-column">
@@ -172,10 +174,10 @@
               <source media="(min-width: 768px)" srcset="assets/images/webp/line-of-code-medium.webp">
               <!-- Default / Mobile fallback -->
               <img src="assets/images/webp/line-of-code-small.webp" class="img-fluid card-img-top"
-                alt="A line of code on a computer screen" loading="lazy">
+                alt="A line of code on a computer screen" width="400" height="250" loading="lazy">
             </picture>
             <div class="card-body d-flex flex-column flex-grow-1">
-              <h5 class="card-title">Full stack developer</h5>
+              <h3 class="card-title">Full stack developer</h3>
               <p class="card-text">Learn more about an exciting career pathway.</p>
               <a href="#" class="btn btn-outline-dark btn-lg mt-auto">Click here</a>
             </div>
@@ -190,10 +192,10 @@
           <source media="(min-width: 768px)" srcset="assets/images/webp/girl-coding-medium.webp">
           <!-- Default / Mobile fallback -->
           <img src="assets/images/webp/girl-coding-small.webp" class="img-fluid card-img-top"
-            alt="Black and Silver Laptop Computer on Round Brown Wooden Table" loading="lazy">
+            alt="Black and Silver Laptop Computer on Round Brown Wooden Table" width="400" height="250" loading="lazy">
         </picture>
         <div class="card-body d-flex flex-column flex-grow-1">
-          <h5 class="card-title">Tips</h5>
+          <h3 class="card-title">Tips</h3>
           <p class="card-text">Get advice from the pros on improving your prospects.</p>
           <a href="#" class="btn btn-outline-dark btn-lg mt-auto">Click here</a>
         </div>
@@ -208,10 +210,10 @@
           <source media="(min-width: 768px)" srcset="assets/images/webp/wireframe-medium.webp">
           <!-- Default / Mobile fallback -->
           <img src="assets/images/webp/wireframe-small.webp" class="img-fluid card-img-top"
-            alt="White printer paper with a wireframe design" loading="lazy">
+            alt="White printer paper with a wireframe design" width="400" height="250" loading="lazy">
         </picture>
         <div class="card-body card-body d-flex flex-column flex-grow-1">
-          <h5 class="card-title">Example projects</h5>
+          <h3 class="card-title">Example projects</h3>
           <p class="card-text">Get inspired with great websites built by coders.</p>
           <a href="projects.html" class="btn btn-outline-dark btn-lg mt-auto">Click here</a>
         </div>
@@ -236,7 +238,7 @@
 
         <!-- Left column: Follow Us -->
         <div class="col-12 col-lg-3 text-center text-lg-start order-2 order-lg-1">
-          <h6 class="text-uppercase">Follow Us</h6>
+          <h4 class="text-uppercase">Follow Us</h4>
           <ul class="list-unstyled mb-0">
             <li><a href="https://www.twitter.com" class="footer-link" target="_blank" rel="noopener"><i
                   class="fab fa-twitter me-2"></i> Twitter</a></li>
@@ -250,7 +252,7 @@
 
         <!-- Right column: Navigation Links -->
         <div class="col-12 col-lg-3 text-center text-lg-end order-3">
-          <h6 class="text-uppercase">Links</h6>
+          <h4 class="text-uppercase">Links</h4>
           <ul class="list-unstyled mb-0">
             <li><a href="index.html" class="footer-link"><i class="fa-solid fa-house me-2"></i> Home</a></li>
             <li><a href="projects.html" class="footer-link"><i class="fa-solid fa-code"></i> Projects</a></li>
@@ -258,6 +260,7 @@
           </ul>
         </div>
       </div>
+    </div>
 
 
   </footer>
