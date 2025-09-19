@@ -249,6 +249,14 @@ h3 {
   .quiz-container {
     min-height: 100vh;
   }
+
+/* Tips section styling */
+.intro-heading {
+  font-size: 1.75rem;
+  line-height: 1.6;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-align: center;
 }
 
 /* Medium devices (tablets, 768px and up) */
