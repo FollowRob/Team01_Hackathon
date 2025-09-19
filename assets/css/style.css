@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-font: "Roboto condensed", "sans-serif"; /* Headings */
-  --secondary-font: "Roboto", "sans-serif"; /* Body */
+  --primary-font: "Merriweather"; /* Headings */
+  --secondary-font: "Roboto"; /* Body */
   --primary-color: #263238; /* Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused */
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
   --tertiary-color: #797979; /* Light gray hovered buttons etc */
   --accent-color: #d84315; /* Deeper Coral for better contrast */
+  --accent-color-two: #4bad3c; /* Bright Green for correct messages */
   --background-color: #ffffff; /* Pure white for maximum readability */
   --quiz-game-color: #23272a;
 }
@@ -146,9 +147,9 @@ h3 {
 }
 
 .quiz-container .options button.correct {
-  background: var(--primary-color);
+  background: var(--accent-color-two);
   color: var(--background-color);
-  border-color: var(--primary-color);
+  border-color: var(--accent-color-two);
 }
 
 .quiz-container .options button:focus,
@@ -165,9 +166,9 @@ h3 {
 }
 
 .quiz-container .options button.correct:hover {
-  background: var(--primary-color);
+  background: var(--accent-color-two);
   color: var(--background-color);
-  border-color: var(--primary-color);
+  border-color: var(--accent-color-two);
 }
 
 /* LEARN MORE */
