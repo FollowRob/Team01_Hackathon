@@ -69,25 +69,24 @@
     </div>
   </nav>
 
-    <main>
-      <!--Hero image w/ button and game start-->
-      <header id="header" class="hero py-5 text-center">
-        <div class="container">
-          <h1 class="display-3 fw-bold mb-3">Welcome to the Quiz</h1>
-          <p class="hero-text">Test your knowledge and challenge yourself!</p>
-          <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3"
-            >Click to start game</a
-          >
-          <button
-            type="button"
-            class="btn btn-outline-light btn-lg mt-3"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModalCenter"
-          >
-            Instructions
-          </button>
-        </div>
-      </header>
+
+  <main>
+    <!--Hero image w/ button and game start-->
+    <header id="header" class="hero py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Welcome to NewbieToNinja</h1>
+        <img src="assets/images/domo-working.png" alt="">
+        <p class="hero-text">From zero to hero, become a coding ninja <br>
+          with help from our coding Ninja, DOMo!
+        </p>
+        <a href="quiz.html" class="btn btn-outline-light btn-lg mt-3">Click to start game</a>
+        <button type="button" class="btn btn-outline-light btn-lg mt-3" data-bs-toggle="modal"
+          data-bs-target="#exampleModalCenter">
+          Instructions
+        </button>
+      </div>
+    </header>
+
 
     <!-- Instructions Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
@@ -166,23 +165,25 @@
     <!--Add pictures w/ device scalability-->
     <section id="learn-more" class="learn-more container">
 
-  <h2 class="text-center mt-0 mb-5">Learn More</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <article class="card h-100 text-center p-3">
-        <picture>
-          <!-- Large devices -->
-          <source media="(min-width: 992px)" srcset="assets/images/line-of-code-large.jpg">
-          <!-- Tablets -->
-          <source media="(min-width: 768px)" srcset="assets/images/line-of-code-medium.jpg">
-          <!-- Default / Mobile fallback -->
-          <img src="assets/images/line-of-code-small.jpg" class="img-fluid card-img-top"
-            alt="A line of code on a computer screen" loading="lazy">
-        </picture>
-        <div class="card-body">
-          <h3 class="card-title">Full stack developer</h3>
-          <p class="card-text">Learn more about an exciting career pathway.</p>
-          <a href="#" class="btn btn-outline-dark btn-lg mt-3">Click here</a>
+      <h2 class="text-center mt-0 mb-5">Learn More</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100 text-center p-3">
+            <picture>
+              <!-- Large devices -->
+              <source media="(min-width: 992px)" srcset="assets/images/line-of-code-large.jpg">
+              <!-- Tablets -->
+              <source media="(min-width: 768px)" srcset="assets/images/line-of-code-medium.jpg">
+              <!-- Default / Mobile fallback -->
+              <img src="assets/images/line-of-code-small.jpg" class="img-fluid card-img-top"
+                alt="A line of code on a computer screen" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3 class="card-title">Full stack developer</h3>
+              <p class="card-text">Learn more about an exciting career pathway.</p>
+              <a href="#" class="btn btn-outline-dark btn-lg mt-3">Click here</a>
+            </div>
+          </article>
         </div>
       </article>
     </div>
@@ -235,7 +236,8 @@
 
         <!-- Center column: Team01 Hackathon + ❤️ -->
         <div class="col-12 col-lg-6 text-center order-1 order-lg-2">
-          <h2>Made with ❤️ for the Hackathon</h2>
+          <p>Made with ❤️ for the Hackathon <br>
+            © 2025 Team01. All rights reserved.</p>
         </div>
 
         <!-- Left column: Follow Us -->
@@ -263,10 +265,7 @@
         </div>
       </div>
 
-      <!-- Footer bottom: copyright -->
-      <div class="text-center p-3 footer-bottom">
-        © 2025 Team01. All rights reserved.
-      </div>
+
   </footer>
 
     <!-- Pull external Javascript -->
