@@ -66,7 +66,7 @@ h3 {
 /* HERO SECTION STYLES */
 
 .hero {
-  background: url(../images/coding-photo-large.jpg) no-repeat center
+  background: url(../images/webp/coding-photo-large.webp) no-repeat center
     center/cover;
   background-color: rgba(0, 0, 0, 0.6); /* dark layer */
   background-blend-mode: multiply;
@@ -222,7 +222,7 @@ h3 {
   }
 
   .hero {
-    background: url(../images/coding-photo-xsmall.jpg) no-repeat center
+    background: url(../images/webp/coding-photo-xsmall.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
@@ -248,7 +248,7 @@ h3 {
   }
 
   .hero {
-    background: url(../images/coding-photo-small.jpg) no-repeat center
+    background: url(../images/webp/coding-photo-small.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
@@ -266,7 +266,7 @@ h3 {
   /* ...your styles for md screens... */
 
   .hero {
-    background: url(../images/coding-photo-medium.jpg) no-repeat center
+    background: url(../images/webp/coding-photo-medium.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
@@ -280,7 +280,7 @@ h3 {
   /* ...your styles for lg screens... */
 
   .hero {
-    background: url(../images/coding-photo-large.jpg) no-repeat center
+    background: url(../images/webp/coding-photo-large.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
@@ -294,7 +294,7 @@ h3 {
   /* ...your styles for xl screens... */
 
   .hero {
-    background: url(../images/coding-photo-large.jpg) no-repeat center
+    background: url(../images/webp/coding-photo-large.webp) no-repeat center
       center/cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
