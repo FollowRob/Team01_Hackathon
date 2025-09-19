@@ -8,6 +8,7 @@
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
   --tertiary-color: #797979; /* Light gray hovered buttons etc */
   --accent-color: #d84315; /* Deeper Coral for better contrast */
+  --accent-color-two: #4bad3c; /* Bright Green for correct messages */
   --background-color: #ffffff; /* Pure white for maximum readability */
   --quiz-game-color: #23272a;
 }
@@ -146,9 +147,9 @@ h3 {
 }
 
 .quiz-container .options button.correct {
-  background: var(--primary-color);
+  background: var(--accent-color-two);
   color: var(--background-color);
-  border-color: var(--primary-color);
+  border-color: var(--accent-color-two);
 }
 
 .quiz-container .options button:focus,
@@ -165,9 +166,9 @@ h3 {
 }
 
 .quiz-container .options button.correct:hover {
-  background: var(--primary-color);
+  background: var(--accent-color-two);
   color: var(--background-color);
-  border-color: var(--primary-color);
+  border-color: var(--accent-color-two);
 }
 
 /* LEARN MORE */
