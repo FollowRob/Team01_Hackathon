@@ -206,11 +206,15 @@ const retakeQuizButton = document.querySelector(".retake-button");
 if (retakeQuizButton) {
   retakeQuizButton.addEventListener("click", setupQuiz);
 }
+// Add Timer element
+const timer = document.querySelector(".quiz-container.timer");
 
 // Variable to track the current question number from the above array
 let questionNumber = 0;
 let score = 0;
-const MAX_QUESTION = 11;
+// Total number of questions
+const MAX_QUESTION = quizData.length;
+let countDown = 10;
 
 // Function to shuffle the options array
 function shuffleArray(array) {
@@ -230,9 +234,41 @@ const checkAnswer = (e) => {
   //console.log(userAnswer);
 };
 
+// Function to create and display a question
 const createQuestion = () => {
   // Ask questions in order
-  const currentIndex = questionNumber;
+  let currentIndex = questionNumber;
+  let timeLeft = 10;
+  const timerDisplay = document.querySelector(".timer");
+  //
+  function startTimer() {
+    clearInterval(countDown);
+    timeLeft = 10; // Reset time left to 10 seconds
+    timerElement.textContent = `Time left: ${timeLeft} seconds`;
+    }
+  if (timerDisplay) {
+    timerDisplay.classList.remove("danger");
+    timerDisplay.textContent = `Time left:${timeLeft} seconds`;
+
+    countDown = setInterval(() => {
+      timeLeft--;
+      timerDisplay.textContent = `Time left:${timeLeft} seconds`;
+      if (timeLeft < 5) {
+        timerDisplay.classList.add("danger");
+      }
+      if(timeLeft <= 0) {
+        clearInterval(countDown);
+        timerDisplay.textContent = "⏰ Time's up!";
+        setTimeout(() => {
+          displayNextQuestion();
+        }, 1000); // short delay for user to see "Time's up!"
+      }
+    }, 1000);
+  }
+  //
+  function startQuiz() {
+  loadNextQuestion(); // ✅ this loads the first question AND starts the timer
+ }
 
   // Clear previous options
   options.innerHTML = "";
@@ -254,9 +290,12 @@ const createQuestion = () => {
       checkAnswer(e);
     });
 
-    //Answer Option Clicked
-    option.addEventListener("click", function () {
+    //sets up a function to run whenever the user clicks on an answer button (option), the timer stops and the code prepares to show feedback about whether the answer was correct or not..
+      option.addEventListener("click", function () {
+        clearInterval(countDown);
       var correctMessage = " ";
+      
+
       // Compare trimmed values to avoid whitespace issues
       if (o.trim() === quizData[currentIndex].correct.trim()) {
         option.classList.add("correct");
@@ -265,6 +304,7 @@ const createQuestion = () => {
       } else {
         option.classList.add("incorrect");
         correctMessage = "Incorrect.";
+
         // Find and highlight the correct answer button
         Array.from(options.children).forEach((btn) => {
           if (
@@ -285,10 +325,17 @@ const createQuestion = () => {
   });
 };
 
+
 // Function to display quiz results
 const displayquizResult = () => {
   let resultMessage = `You scored ${score} out of ${MAX_QUESTION}.`;
   results.textContent = resultMessage;
+
+  // Voice thanking the contestant
+  if ('speechSynthesis' in window) {
+    const utter = new SpeechSynthesisUtterance('Thank you for participating in the quiz!');
+    window.speechSynthesis.speak(utter);
+  }
 };
 
 function setupQuiz() {
