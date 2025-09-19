@@ -7,28 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="Description" content="Enter your description here" />
 
+  <!-- Link to external style libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
 
-    <!-- Link to external style libraries -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Font Awesome 6 (for fa-solid fa-house) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome 6 (for fa-solid fa-house) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Link to custom CSS file -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+  <!-- Link to custom CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <title>NewbieToNinja</title>
 
@@ -57,53 +46,56 @@
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="assets/images/domo-logo.png" alt="DOMo Logo">
         NewbieToNinja</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Main content -->
   <main>
-    <!-- create the quiz container-->
-    <div class="quiz-container">
-      <div class="ms-auto float-end"><img src="assets/images/domo-correct.png" alt="Ninja mascot giving thumbs up"></div>
-      <h1>Can you beat DOMo's quiz?</h1> 
-      <!--create  the timer -->
-      <div class="timer">Time left:10 seconds</div>
-      <!--create the question -->
-      <h2 class="question"></h2>
-      <!-- create the options -->
-      <div class="options">
-        <!-- To display the questions from array using javascript this button class has now been disabled to avoid repetition of code:see const createQuestion = () => {
-       <button class="option correct">Jane Austen</button>
-        <button class="option incorrect">Charlotte Bronte</button>
-        <button class="option">Emily Bronte</button>    
-        <button class="option">Mary Shelley</button>   -->
+    <section class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-12">
+          <article class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h3 class="card-title">Tips</h3>
+              <p class="card-text">Get advice from the pros on improving your prospects.</p>
+              <ul class="text-start">
+                <li>Use semantic HTML tags like <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to improve accessibility.</li>
+                <li>Keep your CSS tidy — group related styles and use comments to explain sections.</li>
+                <li>Test your site with keyboard navigation and screen readers to catch accessibility issues early.</li>
+                <li>Use Git branches for experiments — never push straight to main without testing.</li>
+                <li>Write clear commit messages that explain what changed and why.</li>
+                <li>Use Bootstrap’s built-in classes for layout before writing custom CSS — it’s faster and easier to maintain.</li>
+                <li>Check your site on mobile and desktop — responsive design matters.</li>
+                <li>Use alt text on images so screen readers can describe them properly.</li>
+                <li>Don’t rely on color alone to convey meaning — use icons or labels too.</li>
+                <li>Ask for feedback from teammates — fresh eyes catch things you might miss.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
-      <!--create the next button -->
-      <button class="next-button">Next</button>
-      <button class="retake-button">Restart Quiz</button>
-      <h2 class="results"></h2>
-      <h3 class="answer-explanation"></h3>
-    </div>
+    </section>
   </main>
 
-  <!--Footer with links to social media and copyright-->
+  <!-- Footer -->
   <footer id="footer" class="custom-footer mt-5">
     <div class="container p-4">
       <div class="row gy-4">
 
         <!-- Center column: Team01 Hackathon + ❤️ -->
         <div class="col-12 col-lg-6 text-center order-1 order-lg-2">
-          <p>Made with ❤️ for the Hackathon <br>
-            © 2025 Team01. All rights reserved.</p>
+          <h2>Made with ❤️ for the Hackathon</h2>
         </div>
 
         <!-- Left column: Follow Us -->
@@ -119,7 +111,6 @@
           </ul>
         </div>
 
-
         <!-- Right column: Navigation Links -->
         <div class="col-12 col-lg-3 text-center text-lg-end order-3">
           <h5 class="text-uppercase">Links</h5>
@@ -130,14 +121,19 @@
           </ul>
         </div>
       </div>
+
+      <!-- Footer bottom: copyright -->
+      <div class="text-center p-3 footer-bottom">
+        © 2025 Team01. All rights reserved.
+      </div>
   </footer>
 
+  <!-- Pull external Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 
-    <!-- Pull external Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>
-
