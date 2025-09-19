@@ -98,6 +98,11 @@ h3 {
   color: var(--secondary-color);
 }
 
+.quiz-container .question
+{
+  font-size: 20px;
+}
+
 .quiz-container > h2,
 .timer {
   padding: 20px;
@@ -226,6 +231,10 @@ h3 {
 
   .quiz-container {
     min-height: 100vh;
+  }
+  
+  .quiz-container .options {
+    grid-template-columns: 1fr;
   }
   
 }

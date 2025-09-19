@@ -122,5 +122,6 @@ You can fork this repository by using the following steps:
 ## Resources
 
 ### Media
+[Live Blogger Youtube Channel](https://www.youtube.com/@LiveBlogger/videos)
 
 ### Credits
