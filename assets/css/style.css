@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Variables */
 :root {
-  --primary-font: "Merriweather"; /* Headings */
-  --secondary-font: "Roboto"; /* Body */
+  --primary-font: "Roboto condensed", "sans-serif"; /* Headings */
+  --secondary-font: "Roboto", "sans-serif"; /* Body */
   --primary-color: #263238; /* Deep blue-grey: complements coding-photo backgrounds, modern and tech-focused */
   --secondary-color: #1a1a1a; /* Near-black for strong text contrast */
   --tertiary-color: #797979; /* Light gray hovered buttons etc */
@@ -146,9 +146,9 @@ h3 {
 }
 
 .quiz-container .options button.correct {
-  background: var(--accent-color-two);
+  background: var(--primary-color);
   color: var(--background-color);
-  border-color: var(--accent-color-two);
+  border-color: var(--primary-color);
 }
 
 .quiz-container .options button:focus,
@@ -165,9 +165,9 @@ h3 {
 }
 
 .quiz-container .options button.correct:hover {
-  background: var(--accent-color-two);
+  background: var(--primary-color);
   color: var(--background-color);
-  border-color: var(--accent-color-two);
+  border-color: var(--primary-color);
 }
 
 /* LEARN MORE */
@@ -182,9 +182,11 @@ h3 {
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
+
 /* Custom Footer Styling */
 .custom-footer {
   background: var(--background-color);
+  margin-top: auto; /* Sticky footer: push to bottom */
 }
 
 .custom-footer h5 {
@@ -200,6 +202,9 @@ h3 {
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+
+/* Remove duplicate sticky footer color overrides, keep only margin-top for stickiness */
 
 /* Media Queries for screen responsiveness */
 
