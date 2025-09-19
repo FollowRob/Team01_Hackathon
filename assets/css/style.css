@@ -83,6 +83,15 @@ h3 {
   font-size: 1rem;
 }
 
+.hero-character {
+  max-width: 150px; /* Adjust as needed */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* QUIZ SECTION STYLES */
 
 .quiz-container {
@@ -110,6 +119,11 @@ h3 {
   text-align: left;
   display: flex;
   position: relative;
+}
+
+/* Styling for the timer when time is running out */
+.timer.danger {
+    color: var(--accent-color);
 }
 
 /* Options */
@@ -229,6 +243,10 @@ h3 {
     min-height: 100vh;
   }
 
+  .hero-character {
+    max-width: 120px;
+  }
+
   .quiz-container {
     min-height: 100vh;
   }
@@ -255,6 +273,10 @@ h3 {
     min-height: 100vh;
   }
 
+  .hero-character {
+    max-width: 140px;
+  }
+
   .quiz-container {
     min-height: 100vh;
   }
@@ -272,6 +294,11 @@ h3 {
     background-blend-mode: multiply;
     min-height: 60vh;
   }
+
+  .hero-character {
+    max-width: 160px;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -286,6 +313,11 @@ h3 {
     background-blend-mode: multiply;
     min-height: 50vh;
   }
+
+  .hero-character {
+    max-width: 180px;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -299,5 +331,9 @@ h3 {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     min-height: 50vh;
+  }
+
+  .hero-character {
+    max-width: 200px;
   }
 }
